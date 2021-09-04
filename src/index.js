@@ -1,3 +1,7 @@
+import {chart, chartAlt} from './map.js';
+
+
 document.addEventListener('DOMContentLoaded', function(){
-  console.log('DOM fully loaded and parsed');
+  // chart();
+  chartAlt();
 });
