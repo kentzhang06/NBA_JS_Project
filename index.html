@@ -9,15 +9,18 @@
   <!-- <script src = "./d3.min.js"></script> -->
   <script src="https://d3js.org/d3.v4.min.js"></script>
   <script src="https://d3js.org/topojson.v2.min.js"></script>
-
+  <script src="./us_map/mapdata.js"></script>
+  <script src="./us_map/usmap.js"></script>
   <title>NBA Project</title>
 </head>
 
 <body>
   <h2>NBA VISUALIZER</h2>
   <div class="map-home">
-    <svg width="975" height="600"></svg>
-    
+    <!-- <svg width="975" height="600"></svg> -->
+    <div style="max-width: 900px"> <!-- Keep map above fold -->
+      <div id="map"></div>
+    </div>
   </div>
   
 </body>
