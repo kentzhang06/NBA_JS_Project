@@ -8,13 +8,13 @@ var simplemaps_usmap_mapdata={
     
 		//State defaults
 		state_description: "State description",
-    state_color: "#88A4BC",
-    state_hover_color: "#3B729F",
-    state_url: "https://simplemaps.com",
+    state_color: "#000000",
+    state_hover_color: "#f7023c",
+    state_url: "https://google.com",
     border_size: 1.5,
     border_color: "#ffffff",
     all_states_inactive: "no",
-    all_states_zoomable: "no",
+    all_states_zoomable: "yes",
     
 		//Location defaults
 		location_description: "Location description",
@@ -28,7 +28,7 @@ var simplemaps_usmap_mapdata={
     location_border: 2,
     location_hover_border: 2.5,
     all_locations_inactive: "no",
-    all_locations_hidden: "no",
+    all_locations_hidden: "yes",
     
 		//Label defaults
 		label_color: "#ffffff",
@@ -415,7 +415,7 @@ var simplemaps_usmap_mapdata={
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "https://github.com/"
     },
     MI: {
       name: "Michigan",
