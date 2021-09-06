@@ -2,8 +2,8 @@ var simplemaps_usmap_mapdata={
   main_settings: {
     //General settings
 		width: "responsive", //or 'responsive'
-    background_color: "#FFFFFF",
-    background_transparent: "yes",
+    background_color: "#000000",
+    background_transparent: "no",
     popups: "detect",
     
 		//State defaults
@@ -415,7 +415,7 @@ var simplemaps_usmap_mapdata={
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "https://github.com/"
+      url: "/player.html"
     },
     MI: {
       name: "Michigan",

@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="reset.css" media="screen" />
   <link rel="stylesheet" href="./dist/main.css" />
   <script src="./dist/main.js"></script>
   <!-- <script src = "./d3.min.js"></script> -->
@@ -15,14 +16,37 @@
 </head>
 
 <body>
-  <h2>NBA VISUALIZER</h2>
-  <div class="map-home">
-    <!-- <svg width="975" height="600"></svg> -->
-    <div style="max-width: 900px"> <!-- Keep map above fold -->
-      <div id="map"></div>
-    </div>
+  <!-- <h2>NBA VISUALIZER</h2> -->
+
+  <!-- MAP -->
+  <div class="main-map">
+    <div id="map"></div>
   </div>
-  <button onclick=""></button>
+  
+
+  <!-- NAV BAR -->
+
+  <nav class="main-nav">
+    <a href="#" class="logo">Menu</a>
+    <button class="menu-btn">
+      <div class="bar"></div>
+    </button>
+    <ul class="menu-list nav-hidden">
+      <li class="menu-item">
+        <a href="#">Link 1</a>
+      </li>
+      <li class="menu-item">
+        <a href="#">Link 2</a>
+      </li>
+      <li class="menu-item">
+        <a href="#">Link 3</a>
+      </li>
+    </ul>
+  </nav>
+
+
+
+
   
 </body>
 </html>

@@ -1,13 +1,50 @@
-// map
-.states :hover {
-  fill: red;
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
 }
 
-.state-borders {
-  fill: none;
-  stroke: #fff;
-  stroke-width: 0.5px;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-  pointer-events: none;
+.main-map {
+  max-width: 1500px;
+}
+
+#map {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+
+.menu-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 1rem;
+}
+
+.menu-item a,
+.logo {
+  text-decoration: none;
+  color: #333;
+}
+
+.logo {
+  font-size: 1.5rem;
+}
+
+.menu-btn {
+  display: none;
+  width: 35px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
 }
