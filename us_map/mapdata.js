@@ -27,8 +27,9 @@ var simplemaps_usmap_mapdata={
     location_border_color: "#FFFFFF",
     location_border: 2,
     location_hover_border: 2.5,
+    location_pulse: "yes",
     all_locations_inactive: "no",
-    all_locations_hidden: "yes",
+    all_locations_hidden: "no",
     
 		//Label defaults
 		label_color: "#ffffff",
@@ -474,21 +475,26 @@ var simplemaps_usmap_mapdata={
   },
   locations: {
     "0": {
-      name: "New York",
-      lat: 40.71,
-      lng: -74,
+      name: "San Francisco",
+      lat: 37.7680,
+      lng: -122.3877,
       description: "default",
       color: "default",
       url: "default",
       type: "default",
-      size: "default"
+      size: "default",
+      display: .40
     },
     "1": {
-      name: "Anchorage",
-      lat: 61.2180556,
-      lng: -149.9002778,
+      name: "Los Angeles",
+      lat: 34.0430,
+      lng: -118.2673,
+      description: "default",
       color: "default",
-      type: "circle"
+      url: "default",
+      type: "default",
+      size: "default",
+      display: .40
     }
   },
   labels: {
