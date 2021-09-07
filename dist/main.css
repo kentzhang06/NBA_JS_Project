@@ -22,7 +22,9 @@
 
 .main-map h2 {
   margin-left: 5px;
+  margin-bottom: 35px;
   font-size: 30px;
+  text-decoration: underline;
 }
 
 .usmap {
@@ -41,6 +43,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  border-bottom: #0c0c0c;
 }
 
 .menu-list {
