@@ -1,21 +1,24 @@
+// MAP
 
+.main-map {
+  
+  display: flex;
+  justify-content: space-evenly;
+
+  text-align: center;
+  min-height: 100vh;
+}
+
+#map {
+  max-width: 70vw;
+}
+
+// NAV BAR
 .main-nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-}
-
-.main-map {
-  max-width: 1500px;
-}
-
-#map {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  /* bring your own prefixes */
-  transform: translate(-50%, -50%);
 }
 
 
@@ -33,18 +36,23 @@
 .menu-item a,
 .logo {
   text-decoration: none;
-  color: #333;
+  color: #8b7e7e;
+  font-size: 30px;
 }
 
 .logo {
-  font-size: 1.5rem;
+  font-size: 30px;
+}
+.menu-item a:hover {
+  color:#474444;
 }
 
-.menu-btn {
-  display: none;
-  width: 35px;
-  border: none;
-  background: none;
-  cursor: pointer;
-  padding: 0;
+#simplemaps_list {
+  list-style-type: none;
+  text-align: left;
+  font-size: 25px;
+
+  li {
+    padding: 5px;
+  }
 }

@@ -37,6 +37,7 @@ var simplemaps_usmap_mapdata={
     label_size: 22,
     label_font: "Arial",
     hide_labels: "no",
+
    
 		//Zoom settings
 		manual_zoom: "yes",
