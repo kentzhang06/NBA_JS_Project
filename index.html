@@ -8,18 +8,18 @@
   <link rel="stylesheet" href="./dist/main.css" />
   <script src="./dist/main.js"></script>
   <!-- <script src = "./d3.min.js"></script> -->
-  <!-- <script src="https://d3js.org/d3.v4.min.js"></script>
-  <script src="https://d3js.org/topojson.v2.min.js"></script> -->
-  <script src="./us_map/mapdata.js"></script>
-  <script src="./us_map/usmap.js"></script>
-  <script type="text/javascript" src="./us_map/list.js"></script>
-  <script>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  
+  <!-- <script src="./us_map/mapdata.js"></script>
+  <script src="./us_map/usmap.js"></script> -->
+  <!-- <script type="text/javascript" src="./us_map/list.js"></script> -->
+  <!-- <script>
     simplemaps_list.map=simplemaps_usmap; // tells the script which map to work with
     simplemaps_list.include=["AZ","CA","CO", "FL", "GA", "IL", "IN", "LA", "MA", "MI", "MN", "NY", "NC", "OH", "OK", "OR", "PA", "TN", "TX", "UT", "WI", "DC"];
     /* set any other options here */
     // simplemaps_list.style=false;
     
-  </script>
+  </script> -->
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
@@ -28,10 +28,11 @@
 </head>
 
 <body>
-<div class="background">
+<!-- <div class="background"> -->
+  <svg id="chart" style="width: 80vw;height: 80vh;"></svg>
   <!-- NAV BAR -->
   
-  <nav class="main-nav">
+  <!-- <nav class="main-nav">
     <a href="#" class="logo">
       <img src="./images/logo.png" alt="logo" width="100px" height="auto">
     </a>
@@ -57,23 +58,23 @@
         </a>
       </li>
     </ul>
-  </nav>
+  </nav> -->
   <!-- <h2>NBA VISUALIZER</h2> -->
   
   <!-- MAP -->
   
-  <div class="main-map">
+  <!-- <div class="main-map">
     <h2>NBA States</h2>
     <div id="simplemaps_list"></div>
     <div class="usmap">
       <div id="map"></div>
     </div>
-  </div>
+  </div> -->
   
   
 
 
 
-</div>
+<!-- </div> -->
 </body>
 </html>
