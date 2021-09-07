@@ -24,19 +24,27 @@
     right: 0px;
     bottom: 0px;
     left: 0px;
-    opacity: 0.75;
+    opacity: .9;
     z-index: -1;
 }
 
 // MAP AND LIST
 
-#map {
-  width: 70vw;
-  height: auto;
+.main-map h2 {
+  margin-left: 5px;
+  font-size: 30px;
+}
+
+.usmap {
   position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 15%;
+  left: 20%;
+  
+}
+
+#map {
+  width: 60vw;
+  height: auto;
 }
 
 // #map {
@@ -85,12 +93,12 @@
   cursor: pointer;
   list-style-type: none;
   text-align: left;
-  color: #eb2525;
+  color: #eb9b08;
   font-size: 25px;
 
 }
 
 #simplemaps_list li a:hover {
-  color:#a70c0c;
+  color:#000000;
   font-weight: bold;
 }
