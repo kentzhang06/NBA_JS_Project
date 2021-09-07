@@ -3,7 +3,7 @@ var simplemaps_usmap_mapdata={
     //General settings
 		width: "responsive", //or 'responsive'
     background_color: "#000000",
-    background_transparent: "no",
+    background_transparent: "yes",
     popups: "detect",
     
 		//State defaults
