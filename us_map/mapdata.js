@@ -21,7 +21,6 @@ var simplemaps_usmap_mapdata={
     location_color: "#03A89E",
     location_opacity: 0.8,
     location_hover_opacity: 1,
-    location_url: "/player.html",
     location_size: 25,
     location_type: "circle",
     location_border_color: "#FFFFFF",
