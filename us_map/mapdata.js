@@ -10,7 +10,7 @@ var simplemaps_usmap_mapdata={
 		state_description: "State description",
     state_color: "#000000",
     state_hover_color: "#eb9b08",
-    state_url: "",
+    state_url: "./player.html",
     border_size: 1.5,
     border_color: "#ffffff",
     all_states_inactive: "no",
@@ -23,6 +23,7 @@ var simplemaps_usmap_mapdata={
     location_hover_opacity: 1,
     location_size: 25,
     location_type: "circle",
+    location_url: "",
     location_border_color: "#FFFFFF",
     location_border: 2,
     location_hover_border: 2.5,
@@ -41,7 +42,7 @@ var simplemaps_usmap_mapdata={
 		//Zoom settings
 		manual_zoom: "yes",
     back_image: "no",
-    arrow_box: "no",
+    arrow_box: "yes",
     navigation_size: "40",
     navigation_color: "#f7f7f7",
     navigation_border_color: "#636363",
@@ -78,14 +79,16 @@ var simplemaps_usmap_mapdata={
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      hide: "yes"
     },
     AK: {
       name: "Alaska",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
+      hide: "yes"
     },
     FL: {
       name: "Florida",
@@ -416,7 +419,7 @@ var simplemaps_usmap_mapdata={
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "/player.html"
+      url: "default"
     },
     MI: {
       name: "Michigan",
