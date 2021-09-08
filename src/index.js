@@ -11,8 +11,8 @@ document.addEventListener('DOMContentLoaded', function(){
   // console.log(ca.length);
   // console.log(states);
   document.body.addEventListener("click", function(e) {
-    console.log(e.target);
-    if (e.target.id === "logo") {
+    
+    if (e.target.className.baseVal === "sm_location_2" || e.target.className.baseVal === "sm_Location_2") {
       alert("True");
       map.style.display = "none";
     }

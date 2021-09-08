@@ -89,6 +89,7 @@ function dynamicChart() {
   let pts = 0;
   let rebounds = 0;
   let assists = 0;
+  const dateList = [];
   myChart.data.labels.push("Assists");
   myChart.data.labels.push("Rebounds");
   // logic to get new data
@@ -102,7 +103,7 @@ function dynamicChart() {
         // add new label and data point to chart's underlying data structures
         const totalGamesData = data.data;
         const groupedData = processData(totalGamesData);
-        const dateList = Array.from(groupedData.keys()) 
+        dateList = Array.from(groupedData.keys()) 
         // myChart.data.labels.push("Post " + postId++);
         myChart.options.plugins.title.text = 'new title';
         // for(let date of dateList) {
@@ -135,7 +136,7 @@ function dynamicChart() {
       })
       .catch(err => console.error(err));
   }
-  
+  console.log(dateList);
   // get new data every 3 seconds
   setInterval(getData, 3000);
 }
