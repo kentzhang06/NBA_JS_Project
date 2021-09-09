@@ -1,4 +1,6 @@
 # NBA_JS_Project
+Link to live project:
+https://kentzhang06.github.io/NBA_JS_Project/
 
 # Background:
 
