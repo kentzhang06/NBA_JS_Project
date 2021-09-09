@@ -36,6 +36,7 @@
 #map {
   width: 60vw;
   height: auto;
+  z-index: 6;
 }
 
 .main-nav {
@@ -89,10 +90,30 @@
   font-weight: bold;
 }
 
-.player-bar {
+#mycanvas {
+  display: none;
   position: fixed;
   top: 15%;
-  left: 15%;
+  left: 20%;
   color: black;
   z-index: 5;
+}
+
+#back-btn {
+  display: none;
+  position: fixed;
+  left: 92%;
+  bottom: 12%;
+}
+
+.back {
+  background-color: black;
+  color: #eb9b08;
+  font-size: 25px;
+  border-radius: 2px;
+  padding: 5px;
+}
+
+#player-container {
+  display: none;
 }
