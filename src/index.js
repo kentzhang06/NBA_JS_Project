@@ -1,6 +1,6 @@
 // import {chart, chartAlt} from './map.js';
 import { locationClicked } from './scripts/location_logic.js';
-import {plotChart, processData, processEachDateData} from './scripts/racing_bar_chart.js';
+import {plotChart, processData, processEachDateData} from './scripts/apiUtil.js';
 import {dynamicChart} from './scripts/dynamic_chart.js';
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -12,14 +12,16 @@ document.addEventListener('DOMContentLoaded', function(){
   // console.log(states);
   document.body.addEventListener("click", function(e) {
     
-    if (e.target.className.baseVal === "sm_location_2" || e.target.className.baseVal === "sm_Location_2") {
-      alert("True");
+    if (e.target.className.baseVal === "sm_location_0" || e.target.className.baseVal === "sm_Location_0") {
+      // alert("True");
       map.style.display = "none";
+      dynamicChart('Devin Booker');
+    }else if (e.target.className.baseVal === "sm_location_2" || e.target.className.baseVal === "sm_Location_2") {
+      map.style.display = "none";
+      dynamicChart('Stephen Curry');
     }
   });
 
-
-  // dynamicChart();
  
 });
 
