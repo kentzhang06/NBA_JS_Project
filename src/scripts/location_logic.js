@@ -197,7 +197,6 @@ function backBtnClicked(e, map, graph, btn, list, image) {
     btn.style.display = "none";
     list.style.display = "block";
     image.style.display = "none";
-    // console.log(document.getElementById("mycanvas"));
     document.getElementById("mycanvas").remove();
     
   }
