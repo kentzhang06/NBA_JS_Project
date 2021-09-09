@@ -18,14 +18,17 @@ import {Stats} from './stats.js';
 
 
 function dynamicChart(playername) {
-  // Chart.helpers.each(Chart.instances, function (instance) {
-  //   if (instance.chart.canvas.id === "mycanvas") {
-  //     instance.destroy();
-  //     return;         
-  //   }
-  // });
+
+  let canvasResult = document.getElementById("mycanvas");
+  if (canvasResult) canvasResult.remove();
+  let canvas = document.createElement('canvas');
+  canvas.setAttribute('id','mycanvas');
+  // // canvas.setAttribute('width','300');
+  // // canvas.setAttribute('height','100');
+  document.getElementById("canvas-container").appendChild(canvas);
   let ctx = document.getElementById("mycanvas");
-  let myChart = new Chart(ctx, {
+
+  const myChart = new Chart(ctx, {
     type: 'bar',
     options: {
       responsive: true,
@@ -122,8 +125,6 @@ function dynamicChart(playername) {
 
   // get new data every 1 seconds
   setInterval(getData, 1000);
-  
-  return myChart;
 }
 
 export {dynamicChart};

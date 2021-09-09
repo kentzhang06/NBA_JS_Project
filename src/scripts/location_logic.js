@@ -2,14 +2,13 @@ import {dynamicChart} from './dynamic_chart.js';
 import {displayPlayer} from './images.js';
 
 function locationClicked(e, map, graph, btn, list, image) {
-  let myChart;
   if (e.target.className.baseVal === "sm_location_0" || e.target.className.baseVal === "sm_Location_0") {
     map.style.display = "none";
     graph.style.display = "block";
     btn.style.display = "block";
     list.style.display = "none";
     image.style.display = "block";
-    myChart = dynamicChart('Devin Booker');
+    dynamicChart('Devin Booker');
   }else if (e.target.className.baseVal === "sm_location_1" || e.target.className.baseVal === "sm_Location_1") {
     map.style.display = "none";
     graph.style.display = "block";
@@ -186,10 +185,10 @@ function locationClicked(e, map, graph, btn, list, image) {
     list.style.display = "none";
     dynamicChart('Pascal Siakam');
   }
-  return myChart;
+  
 }
 
-function backBtnClicked(e, map, graph, btn, list, image, myChart) {
+function backBtnClicked(e, map, graph, btn, list, image) {
 
   
   if (e.target.className === "back") {
@@ -198,7 +197,9 @@ function backBtnClicked(e, map, graph, btn, list, image, myChart) {
     btn.style.display = "none";
     list.style.display = "block";
     image.style.display = "none";
-    // myChart.destroy();
+    // console.log(document.getElementById("mycanvas"));
+    document.getElementById("mycanvas").remove();
+    
   }
 
 }

@@ -10,15 +10,13 @@ document.addEventListener('DOMContentLoaded', function(){
   const graph = document.getElementById("mycanvas");
   const list = document.getElementById("simplemaps_list");
   const image = document.getElementById("player-container");
-  let myChart;
   displayPlayer('./images/devin-booker.jpg');
 
   document.body.addEventListener("click", function(e) {
-    myChart = locationClicked(e, map, graph, btn, list, image);
-    console.log(myChart);
+    locationClicked(e, map, graph, btn, list, image);
+    // console.log(myChart);
     // myChart.destroy();
-    backBtnClicked(e, map, graph, btn, list, image, myChart);
-
+    backBtnClicked(e, map, graph, btn, list, image);
 
   });
 
