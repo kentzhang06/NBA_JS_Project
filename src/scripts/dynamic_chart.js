@@ -18,6 +18,12 @@ import {Stats} from './stats.js';
 
 
 function dynamicChart(playername) {
+  // Chart.helpers.each(Chart.instances, function (instance) {
+  //   if (instance.chart.canvas.id === "mycanvas") {
+  //     instance.destroy();
+  //     return;         
+  //   }
+  // });
   let ctx = document.getElementById("mycanvas");
   let myChart = new Chart(ctx, {
     type: 'bar',

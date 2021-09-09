@@ -198,7 +198,7 @@ function backBtnClicked(e, map, graph, btn, list, image, myChart) {
     btn.style.display = "none";
     list.style.display = "block";
     image.style.display = "none";
-    myChart.destroy();
+    // myChart.destroy();
   }
 
 }
