@@ -1,4 +1,5 @@
 // import {chart, chartAlt} from './map.js';
+import { displayUserInstructions } from './scripts/user_instructions.js';
 import { locationClicked, backBtnClicked } from './scripts/location_logic.js';
 import {displayPlayer} from './scripts/images.js';
 // import {plotChart, processData, processEachDateData} from './scripts/apiUtil.js';
@@ -11,6 +12,8 @@ document.addEventListener('DOMContentLoaded', function(){
   const list = document.getElementById("simplemaps_list");
   const image = document.getElementById("player-container");
   displayPlayer('./images/devin-booker.jpg');
+
+  displayUserInstructions();
 
   document.body.addEventListener("click", function(e) {
     locationClicked(e, map, graph, btn, list, image);

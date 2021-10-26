@@ -12,6 +12,8 @@ body {
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
+  font-family: 'Bebas Neue', cursive;
+  font-size: 20px;
 }
 
 .cols-container {
@@ -60,6 +62,18 @@ body {
   h2 {
     font-size: 40px;
   }
+}
+
+#instructions {
+  position: fixed;
+  top: 10%;
+  right: 1%;
+  width: 20%;
+  height: 800px;
+  background-color: black;
+  color: orange;
+  line-height: 1.6;
+  padding: 8px;
 }
 
 // NAV BAR
