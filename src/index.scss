@@ -69,12 +69,15 @@ body {
 }
 
 #instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
   top: 10%;
   right: 0.5%;
   width: 18%;
-  height: 800px;
-  background-color: black;
+  height: 50%;
+  background-color: rgb(27, 27, 27);
   color: orange;
   line-height: 1.6;
   padding: 8px;
@@ -145,13 +148,17 @@ body {
   font-weight: bold;
 }
 
+#canvas-container {
+  width: 70%;
+  position: fixed;
+  top: 20%;
+  left: 15%;
+}
+
 // BAR GRAPH
 #mycanvas {
   display: none;
-  position: fixed;
-  top: 15%;
-  left: 20%;
-  color:black;
+  background-color: transparent;
   z-index: 5;
 }
 
@@ -164,11 +171,19 @@ body {
 }
 
 .back {
-  background-color: black;
+  background-color: rgb(27, 27, 27);
   color: #eb9b08;
   font-size: 25px;
-  border-radius: 2px;
-  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  padding: 10px;
+  transition: 0.8s;
+}
+
+.back:hover {
+  background-color: white;
+  cursor: pointer;
 }
 
 #player-container {

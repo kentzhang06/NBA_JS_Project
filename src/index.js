@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
   // const graph = document.getElementById("mycanvas");
   // const list = document.getElementById("simplemaps_list");
   // const image = document.getElementById("player-container");
-  displayPlayer('./images/devin-booker.jpg');
+  // displayPlayer('./images/devin-booker.jpg');
 
   displayUserInstructions();
 

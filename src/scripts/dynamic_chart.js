@@ -25,7 +25,8 @@ function dynamicChart(playername) {
         title: {
           display: true,
           font: {
-            color: "black",
+            backgroundColor: "#eb9b08",
+            color: "#000000",
             size: 50,
           },
           text: playername,
@@ -37,6 +38,9 @@ function dynamicChart(playername) {
           ticks: {
             size: 20,
           },
+          title: {
+            color: "#000000"
+          }
         },
       },
     },
@@ -54,9 +58,9 @@ function dynamicChart(playername) {
       datasets: [
         {
           data: [],
-          borderWidth: 1,
-          color: "#000000",
-          borderColor: "#00c0ef",
+          borderWidth: 2,
+          color: "black",
+          borderColor: "black",
           backgroundColor: "#eb9b08",
           hoverBackgroundColor: "#000000",
           label: "",
@@ -122,6 +126,7 @@ function dynamicChart(playername) {
           x = 0;
           pg_num = 1;
           stats.resetStats();
+          dynamicChart(playername);
         }
       })
       .catch((err) => console.error(err));

@@ -4,11 +4,9 @@ import {displayPlayer} from './images.js';
 function displayHelper(name) {
   const map = document.getElementById("map");
   const btn = document.getElementById("back-btn");
-  const graph = document.getElementById("mycanvas");
   const list = document.getElementById("simplemaps_list");
   const image = document.getElementById("player-container");
   map.style.display = "none";
-  graph.style.display = "block";
   btn.style.display = "block";
   list.style.display = "none";
   image.style.display = "block";
