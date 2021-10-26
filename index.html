@@ -16,7 +16,7 @@
   <script type="text/javascript" src="./us_map/list.js"></script>
   <script>
     simplemaps_list.map=simplemaps_usmap; // tells the script which map to work with
-    simplemaps_list.include=["AZ","CA","CO", "FL", "GA", "IL", "IN", "LA", "MA", "MI", "MN", "NY", "NC", "OH", "OK", "OR", "PA", "TN", "TX", "UT", "WI", "DC"];
+    // simplemaps_list.include=["AZ","CA","CO", "FL", "GA", "IL", "IN", "LA", "MA", "MI", "MN", "NY", "NC", "OH", "OK", "OR", "PA", "TN", "TX", "UT", "WI", "DC"];
     /* set any other options here */
     // simplemaps_list.style=false;
     
@@ -40,50 +40,49 @@
 </head>
 
 <body>
-<div class="background">
+    
+  <!-- NAV BAR -->
+  <div class="cols-container">
+
+    <div class="col-1">
+      <div id="simplemaps_list"></div>
+    </div>
+    
+    <div class="col-2">
+      <div class="heading-logo">
+        <a href="#" class="logo">
+          <img class="logo" src="./images/logo.png" alt="logo">
+        </a>
+        <h2>NBA Data Visualizer</h2>
+      </div>
   
+      <div class="main-map">
+        <div id="map"></div>
+      </div>
+    </div>
+
+    
+    <div class="col-3">
+      <nav class="main-nav">
+        <h3>Created By Kent Zhang</h3>
+        <ul class="menu-list nav-hidden">
+          <li class="menu-item">
+            <a class="github" href="https://github.com/kentzhang06" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+          <li class="menu-item">
+            <a class="github" href="https://www.linkedin.com/in/kent-zhang-297591193/" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
   <div id="player-container"></div>
   <div id= "canvas-container" style="width:70%;">
     <canvas id="mycanvas"></canvas>
-  </div>
-  <!-- NAV BAR -->
-  
-  <nav class="main-nav">
-    <a href="#" class="logo">
-      <img class="logo" src="./images/logo.png" alt="logo" width="100px" height="auto">
-    </a>
-
-    <ul class="menu-list nav-hidden">
-      <li class="menu-item">
-        <a href="#"></a>
-      </li>
-      <li class="menu-item">
-        <a href="#"></a>
-      </li>
-      <li class="menu-item">
-        <a href="#"></a>
-      </li>
-      <li class="menu-item">
-        <a class="github" href="https://github.com/kentzhang06" target="_blank">
-          <ion-icon name="logo-github"></ion-icon>
-        </a>
-      </li>
-      <li class="menu-item">
-        <a class="github" href="https://www.linkedin.com/in/kent-zhang-297591193/" target="_blank">
-          <ion-icon name="logo-linkedin"></ion-icon>
-        </a>
-      </li>
-    </ul>
-  </nav>
-  
-  <!-- MAP -->
-  
-  <div class="main-map">
-    <h2>NBA States</h2>
-    <div id="simplemaps_list"></div>
-    <div class="usmap">
-      <div id="map"></div>
-    </div>
   </div>
 
   <!-- BACK BUTTON -->
@@ -92,8 +91,6 @@
       Exit
     </button>
   </div>
-  
-
-</div>
+    
 </body>
 </html>
