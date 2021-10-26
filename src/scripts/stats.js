@@ -29,7 +29,7 @@ class Stats {
     this.freethrows += ft;
   }
 
-  resetStats(){
+  resetStats() {
     this.pts = 0;
     this.rebounds = 0;
     this.assists = 0;
@@ -41,4 +41,4 @@ class Stats {
   }
 }
 
-export {Stats};
+export { Stats };

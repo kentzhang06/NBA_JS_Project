@@ -6,20 +6,20 @@ import {displayPlayer} from './scripts/images.js';
 // import {dynamicChart} from './scripts/dynamic_chart.js';
 
 document.addEventListener('DOMContentLoaded', function(){
-  const map = document.getElementById("map");
-  const btn = document.getElementById("back-btn");
-  const graph = document.getElementById("mycanvas");
-  const list = document.getElementById("simplemaps_list");
-  const image = document.getElementById("player-container");
+  // const map = document.getElementById("map");
+  // const btn = document.getElementById("back-btn");
+  // const graph = document.getElementById("mycanvas");
+  // const list = document.getElementById("simplemaps_list");
+  // const image = document.getElementById("player-container");
   displayPlayer('./images/devin-booker.jpg');
 
   displayUserInstructions();
 
   document.body.addEventListener("click", function(e) {
-    locationClicked(e, map, graph, btn, list, image);
+    locationClicked(e);
     // console.log(myChart);
     // myChart.destroy();
-    backBtnClicked(e, map, graph, btn, list, image);
+    backBtnClicked(e);
 
   });
 
