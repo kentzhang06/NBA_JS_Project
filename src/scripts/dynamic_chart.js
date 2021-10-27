@@ -14,33 +14,14 @@ function dynamicChart(playername) {
     options: {
       responsive: true,
       plugins: {
-        legend: {
-          labels: {
-            font: {
-              color: "#000000",
-              size: 20,
-            },
-          },
-        },
         title: {
           display: true,
+          color: "#000000",
           font: {
-            backgroundColor: "#eb9b08",
-            color: "#000000",
-            size: 50,
+            size: 70,
+            family: "Helvetica Neue",
           },
           text: playername,
-        },
-        scales: {
-          y: {
-            beginAtZero: true,
-          },
-          ticks: {
-            size: 20,
-          },
-          title: {
-            color: "#000000"
-          }
         },
       },
     },
@@ -58,8 +39,7 @@ function dynamicChart(playername) {
       datasets: [
         {
           data: [],
-          borderWidth: 2,
-          color: "black",
+          borderWidth: 1,
           borderColor: "black",
           backgroundColor: "#eb9b08",
           hoverBackgroundColor: "#000000",
