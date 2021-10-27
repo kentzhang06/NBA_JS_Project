@@ -477,10 +477,11 @@ var simplemaps_usmap_mapdata = {
   },
   locations: {
     0: {
-      name: "Phoenix Suns",
+      name: "Footprint Center </br> Phoenix Suns",
       lat: 33.4457,
       lng: -112.0712,
-      description: "Footprint Center",
+      description:
+        "<img src='https://ipg360.com/wp-content/uploads/2021/07/FootprintCenter_fully_lit-scaled.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -488,10 +489,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     1: {
-      name: "Sacramento Kings",
+      name: "Golden 1 Center </br> Sacramento Kings",
       lat: 38.5802,
       lng: -121.4997,
-      description: "Golden 1 Center",
+      description:
+        "<img src='https://www.sacrt.com/images/g1big.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -503,7 +505,7 @@ var simplemaps_usmap_mapdata = {
       lat: 37.768,
       lng: -122.3877,
       description:
-        "<img src='https://www.mortenson.com/-/media/project/mortenson/site/images/projects/chase-center/banner-image.jpg' style='width: 100px'/>",
+        "<img src='https://www.mortenson.com/-/media/project/mortenson/site/images/projects/chase-center/banner-image.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -511,10 +513,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     3: {
-      name: "Los Angeles Lakers",
+      name: "Staples Center </br> Los Angeles Lakers",
       lat: 34.043,
       lng: -118.2673,
-      description: "Staples Center",
+      description:
+        "<img src='https://www.staplescenter.com/assets/img/20160517_SC_Exterior_Figueroa_Street_Group-Sales-Slide-c111e40839.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -522,10 +525,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     4: {
-      name: "Los Angeles Clippers",
+      name: "Staples Center </br> Los Angeles Clippers",
       lat: 34.343,
       lng: -118.2673,
-      description: "Staples Center",
+      description:
+        "<img src='https://e0.365dm.com/21/05/1600x900/skysports-staples-center-los-angeles-lakers_5397360.jpg?20210528053405' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -533,10 +537,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     5: {
-      name: "Denver Nuggets",
+      name: "Ball Arena </br> Denver Nuggets",
       lat: 39.7487,
       lng: -105.0076,
-      description: "Ball Arena",
+      description:
+        "<img src='https://www.nba.com/nuggets/sites/nuggets/files/ballarena2021.jpg?w=756&h=547' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -544,10 +549,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     6: {
-      name: "Orlando Magic",
+      name: "Amway Center </br> Orlando Magic",
       lat: 28.5392,
       lng: -81.3839,
-      description: "Amway Center",
+      description:
+        "<img src='https://www.amwaycenter.com/assets/img/BTExterior-Amway-Center-1.1-c51e9f0c4e.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
