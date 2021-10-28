@@ -58,7 +58,7 @@ function dynamicChart(playername) {
   const stats = new Stats();
   let pg_num = 1;
   let x = 1;
-  let intervalId = 0;
+  let intervalId, interval = 0;
 
   // logic to get new data
   let getData = function (intervalId) {
@@ -67,12 +67,15 @@ function dynamicChart(playername) {
     )
       .then((response) => response.json())
       .then((data) => {
-        // process your data to pull out what you plan to use to update the chart
+        console.log(intervalId);
+        console.log(data);
+        console.log("pg num:" + pg_num);
 
+        // process your data to pull out what you plan to use to update the chart
         const groupedData = processData(data.data);
         const dateList = Array.from(groupedData.keys());
 
-        let interval = setInterval(() => {
+        interval = setInterval(() => {
           const temp = processEachDateData(groupedData.get(dateList[x])[0]);
           stats.updateStats(
             temp[4].value,
@@ -94,29 +97,35 @@ function dynamicChart(playername) {
           myChart.data.datasets[0].data[6] = stats.turnovers;
           myChart.data.datasets[0].data[7] = stats.freethrows;
           myChart.update();
-          
-          // increment page number of fetched data
+          x++;
+
           console.log("x" + x);
-          console.log("per page:" + data.meta.per_page)
-          if (x >= data.meta.per_page) {
+          console.log("per page:" + data.meta.per_page);
+
+          if (x === data.meta.per_page + 1) {
+            console.log("NEW PAGE +1");
             x = 1;
             pg_num++;
             clearInterval(interval);
+            // let newInt = setInterval( () => clearInterval(interval), 100);
+            // clearInterval(newInt);
           }
-          x++;
+
+          // increment page number of fetched data
+          if (pg_num === data.meta.total_pages + 1) {
+            console.log("END");
+            console.log(intervalId);
+            // clearInterval(interval);
+            clearInterval(intervalId);
+          }
         }, 100);
-        console.log(intervalId);
-        console.log(data);
-        if (pg_num >= data.meta.total_pages) {
-          console.log('END');
-          console.log(intervalId);
-          clearInterval(intervalId);
-        }
       })
       .catch((err) => console.error(err));
   };
+  // initial call to grab data/grow chart
   getData();
-  intervalId = setInterval(() => getData(intervalId), 10000);
+  // looping interval to grab rest of data/grow chart
+  intervalId = setInterval(() => getData(intervalId), 9900);
 }
 
 export { dynamicChart };
