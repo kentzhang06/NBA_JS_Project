@@ -31,6 +31,14 @@ const playersIDs = {
   "Bradley Beal": 37,
 };
 
+async function fetchPlayerAvg(playername) {
+  const response = await fetch(
+    `https://www.balldontlie.io/api/v1/season_averages?season=2020&player_ids[]=${playersIDs[playername]}`
+  );
+
+  return await response.json();
+}
+
 function processData(data) {
   return d3.group(data, (d) => d.game.date);
 }
@@ -59,4 +67,4 @@ function processEachDateData(data) {
   return Object.keys(data).map((key) => ({ key, value: parseInt(data[key]) }));
 }
 
-export { processData, processEachDateData, playersIDs };
+export { processData, processEachDateData, playersIDs, fetchPlayerAvg };

@@ -1,4 +1,4 @@
-import {dynamicChart} from './dynamic_chart.js';
+import {dynamicChart, accessData} from './dynamic_chart.js';
 import {displayPlayer} from './images.js';
 
 function displayHelper(name) {
@@ -10,7 +10,7 @@ function displayHelper(name) {
   btn.style.display = "block";
   list.style.display = "none";
   image.style.display = "block";
-  dynamicChart(name);
+  accessData(name);
 }
 
 function locationClicked(e) {
