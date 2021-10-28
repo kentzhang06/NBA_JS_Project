@@ -477,7 +477,7 @@ var simplemaps_usmap_mapdata = {
   },
   locations: {
     0: {
-      name: "Footprint Center </br> Phoenix Suns",
+      name: "Footprint Center </br> <div class='darkorange'> Phoenix Suns </div>",
       lat: 33.4457,
       lng: -112.0712,
       description:
@@ -489,7 +489,7 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     1: {
-      name: "Golden 1 Center </br> Sacramento Kings",
+      name: "Golden 1 Center </br> <div class='darkorange'> Sacramento Kings </div>",
       lat: 38.5802,
       lng: -121.4997,
       description:
@@ -501,7 +501,7 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     2: {
-      name: "Chase Center </br> Golden State Warriors",
+      name: "Chase Center </br> <div class='darkorange'> Golden State Warriors </div>",
       lat: 37.768,
       lng: -122.3877,
       description:
@@ -513,7 +513,7 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     3: {
-      name: "Staples Center </br> Los Angeles Lakers",
+      name: "Staples Center </br> <div class='darkorange'> Los Angeles Lakers </div>",
       lat: 34.043,
       lng: -118.2673,
       description:
@@ -525,7 +525,7 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     4: {
-      name: "Staples Center </br> Los Angeles Clippers",
+      name: "Staples Center </br> <div class='darkorange'> Los Angeles Clippers </div>",
       lat: 34.343,
       lng: -118.2673,
       description:
@@ -537,7 +537,7 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     5: {
-      name: "Ball Arena </br> Denver Nuggets",
+      name: "Ball Arena </br> <div class='darkorange'> Denver Nuggets </div>",
       lat: 39.7487,
       lng: -105.0076,
       description:
@@ -549,7 +549,7 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     6: {
-      name: "Amway Center </br> Orlando Magic",
+      name: "Amway Center </br> <div class='darkorange'> Orlando Magic </div>",
       lat: 28.5392,
       lng: -81.3839,
       description:
@@ -561,10 +561,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     7: {
-      name: "Miami Heat",
+      name: "FTX Arena </br> <div class='darkorange'> Miami Heat </div>",
       lat: 25.7814,
       lng: -80.187,
-      description: "FTX Arena",
+      description:
+        "<img src='https://boardroom.tv/wp-content/uploads/2021/03/miami-1024x720.png' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -572,10 +573,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     8: {
-      name: "Atlanta Hawks",
+      name: "State Farm Arena </br> <div class='darkorange'> Atlanta Hawks </div>",
       lat: 33.7573,
       lng: -84.3963,
-      description: "State Farm Arena",
+      description:
+        "<img src='https://content.presspage.com/uploads/1441/1920_statefarmarenabrow.jpg?10000' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -583,10 +585,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     9: {
-      name: "Chicago Bulls",
+      name: "United Center </br> <div class='darkorange'> Chicago Bulls </div>",
       lat: 41.8807,
       lng: -87.6742,
-      description: "United Center",
+      description:
+        "<img src='https://www.unitedcenter.com/assets/1/7/unitedcenter3.png' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -594,10 +597,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     10: {
-      name: "Indiana Pacers",
+      name: "Gainbridge Fieldhouse </br> <div class='darkorange'> Indiana Pacers </div>",
       lat: 39.764,
       lng: -86.1555,
-      description: "Bankers Life Fieldhouse",
+      description:
+        "<img src='https://cloudinary-assets.dostuffmedia.com/res/dostuff-media/image/upload/venue-45792/1477518155.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -605,10 +609,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     11: {
-      name: "New Orlean Pelicans",
+      name: "Smoothie King Center </br> <div class='darkorange'> New Orlean Pelicans </div>",
       lat: 29.949,
       lng: -90.0821,
-      description: "Smoothie King Center",
+      description:
+        "<img src='https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,g_auto,h_500,q_50,w_1400/https://assets.simpleviewinc.com/simpleview/image/upload/crm/neworleans/1_72F6311E-227D-44FE-BBA9CAB1B7B04BD5_21eda2bb-4960-4109-8ac6a6596ec9f8ac.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -616,10 +621,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     12: {
-      name: "Boston Celtics",
+      name: "TD Garden </br> <div class='darkorange'> Boston Celtics </div>",
       lat: 42.3662,
       lng: -71.0621,
-      description: "TD Garden",
+      description:
+        "<img src='https://www.tdgarden.com/assets/img/default_slideshow-1600x600-7d0781f96b.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -627,10 +633,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     13: {
-      name: "Detroit Pistons",
+      name: "Little Caesars Arena </br> <div class='darkorange'> Detroit Pistons </div>",
       lat: 42.3411,
       lng: -83.0553,
-      description: "Little Caesars Arena",
+      description:
+        "<img src='https://cdn.vox-cdn.com/thumbor/E59yxmAoOyzxsagffhdFLVO0x20=/0x0:720x480/920x613/filters:focal(313x66:427x180):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56034567/LittleCaesarsArena_Exterior_Thumb.0.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -638,10 +645,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     14: {
-      name: "Minessota Timberwolves",
+      name: "Target Center </br> <div class='darkorange'> Minessota Timberwolves </div>",
       lat: 44.9795,
       lng: -93.2761,
-      description: "Target Center",
+      description:
+        "<img src='https://media-exp1.licdn.com/dms/image/C561BAQH9ialT6mekwg/company-background_10000/0/1559071021006?e=2159024400&v=beta&t=P3geUJj1JTURC1fUQLTwZm2PKHr55gPpIHezKbyQxUk' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -649,10 +657,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     15: {
-      name: "New York Knicks",
+      name: "Madison Square Garden </br> <div class='darkorange'> New York Knicks </div>",
       lat: 40.7505,
       lng: -73.9934,
-      description: "Madison Square Garden",
+      description:
+        "<img src='https://www.adventurestudenttravel.com/wp-content/uploads/2014/01/nyc-4986116_1280.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -660,10 +669,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     16: {
-      name: "Brooklyn Nets",
+      name: "Barclays Center </br> <div class='darkorange'> Brooklyn Nets </div>",
       lat: 40.6826,
       lng: -73.9754,
-      description: "Barclays Center",
+      description:
+        "<img src='https://www.barclayscenter.com/assets/img/about-1170x450-d9c047de75.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -671,10 +681,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     17: {
-      name: "Charlotte Hornets",
+      name: "Spectrum Center </br> <div class='darkorange'> Charlotte Hornets </div>",
       lat: 35.2252,
       lng: -80.8394,
-      description: "Spectrum Center",
+      description:
+        "<img src='https://www.spectrumcentercharlotte.com/assets/img/Spectrum_Exterior_Thumb-9e853aa3f9.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -682,10 +693,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     18: {
-      name: "Cleveland Cavaliers",
+      name: "Rocket Mortgage FieldHouse </br> <div class='darkorange'> Cleveland Cavaliers </div>",
       lat: 41.4965,
       lng: -81.6881,
-      description: "Rocket Mortgage FieldHouse",
+      description:
+        "<img src='https://www.architecturalrecord.com/ext/resources/Issues/2020/08-August/Rocket-Mortgage-FieldHouse-01-B.jpg?1596653435' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -693,10 +705,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     19: {
-      name: "Oklahoma City Thunder",
+      name: "Paycom Center </br> <div class='darkorange'> Oklahoma City Thunder </div>",
       lat: 35.4634,
       lng: -97.5151,
-      description: "Paycom Center",
+      description:
+        "<img src='https://image.cnbcfm.com/api/v1/image/106917098-1627334645367-paycomcenter_roof_night-1.jpg?v=1627334826' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -704,10 +717,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     20: {
-      name: "Portland Trail Blazers",
+      name: "Moda Center </br> <div class='darkorange'> Portland Trail Blazers </div>",
       lat: 45.5316,
       lng: -122.6668,
-      description: "Moda Center",
+      description:
+        "<img src='https://i.pinimg.com/originals/e4/c2/53/e4c253d6d5541e189d338d1a0fc6a9f2.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -715,10 +729,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     21: {
-      name: "Philadelphia 76ers",
+      name: "Wells Fargo Center </br> <div class='darkorange'> Philadelphia 76ers </div>",
       lat: 39.9012,
       lng: -75.172,
-      description: "Wells Fargo Center",
+      description:
+        "<img src='https://cdn10.phillymag.com/wp-content/uploads/sites/3/2018/10/940x540-04.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -726,10 +741,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     22: {
-      name: "Memphis Grizzlies",
+      name: "FedExForum </br> <div class='darkorange'> Memphis Grizzlies </div>",
       lat: 35.1381,
       lng: -90.0506,
-      description: "FedExForum",
+      description:
+        "<img src='https://media.bizj.us/view/img/10377704/fedexforum*1200xx6600-3713-0-694.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -737,10 +753,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     23: {
-      name: "Dallas Mavericks",
+      name: "American Airlines Center </br> <div class='darkorange'> Dallas Mavericks </div>",
       lat: 32.7905,
       lng: -96.8109,
-      description: "American Airlines Center",
+      description:
+        "<img src='https://www.americanairlinescenter.com/assets/img/aacenter.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -748,10 +765,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     24: {
-      name: "Houston Rockets",
+      name: "Toyota Center </br> <div class='darkorange'> Houston Rockets </div>",
       lat: 29.7508,
       lng: -95.3621,
-      description: "Toyota Center",
+      description:
+        "<img src='https://dtnbgpzadn69x.cloudfront.net/images/2020/10/14/Toyota_Center.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -759,10 +777,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     25: {
-      name: "San Antonio Spurs",
+      name: "AT&T Center </br> <div class='darkorange'> San Antonio Spurs </div>",
       lat: 29.427,
       lng: -98.4375,
-      description: "AT&T Center",
+      description:
+        "<img src='https://304ljw4amcep3ali496xph6b-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/ATT-center-SF-20160330_DIG_2708_MAS-1900-1600x1069.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -770,10 +789,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     26: {
-      name: "Utah Jazz",
+      name: "Vivint Arena </br> <div class='darkorange'> Utah Jazz </div>",
       lat: 40.7683,
       lng: -111.9011,
-      description: "Vivint Arena",
+      description:
+        "<img src='https://www.lhm.com/wp-content/uploads/2017/09/700480000-800x600.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -781,10 +801,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     27: {
-      name: "Milwaukee Bucks",
+      name: "Fiserv Forum </br> <div class='darkorange'> Milwaukee Bucks </div>",
       lat: 43.0451,
       lng: -87.9174,
-      description: "Fiserv Forum",
+      description:
+        "<img src='https://www.milwaukeemag.com/wp-content/uploads/2020/08/VM-FiservForum-NML-Meeting-Convention-563.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -792,10 +813,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     28: {
-      name: "Washington Wizards",
+      name: "Capital One Arena </br> <div class='darkorange'> Washington Wizards </div>",
       lat: 38.8982,
       lng: -77.0209,
-      description: "Capital One Arena",
+      description:
+        "<img src='https://usbettingreport.com/wp-content/uploads/2019/10/capital-one-arena2-960x720.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
@@ -803,10 +825,11 @@ var simplemaps_usmap_mapdata = {
       display: 0.4,
     },
     29: {
-      name: "Toronto Raptors",
+      name: "Scotiabank Arena </br> <div class='darkorange'> Toronto Raptors </div>",
       lat: 43.6435,
       lng: -79.3791,
-      description: "Scotiabank Arena",
+      description:
+        "<img src='https://www.scotiabankarena.com/assets/img/SBA-VENUE-SEPT-2020-MED-RES-4726-55538bd0e3.JPG' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
