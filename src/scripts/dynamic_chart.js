@@ -57,10 +57,11 @@ function dynamicChart(playername) {
 
   const stats = new Stats();
   let pg_num = 1;
-  let x = 0;
+  let x = 1;
+  let intervalId = 0;
 
   // logic to get new data
-  let getData = function () {
+  let getData = function (intervalId) {
     fetch(
       `https://www.balldontlie.io/api/v1/stats?player_ids[]=${playersIDs[playername]}&page=${pg_num}&per_page=100`
     )
@@ -93,26 +94,29 @@ function dynamicChart(playername) {
           myChart.data.datasets[0].data[6] = stats.turnovers;
           myChart.data.datasets[0].data[7] = stats.freethrows;
           myChart.update();
-          x++;
-
-          if (x > data.meta.per_page - 1) {
-            x = 0;
+          
+          // increment page number of fetched data
+          console.log("x" + x);
+          console.log("per page:" + data.meta.per_page)
+          if (x >= data.meta.per_page) {
+            x = 1;
             pg_num++;
             clearInterval(interval);
           }
-        }, 1000);
-
-        if (pg_num > data.meta.total_pages) {
-          x = 0;
-          pg_num = 1;
-          stats.resetStats();
-          dynamicChart(playername);
+          x++;
+        }, 100);
+        console.log(intervalId);
+        console.log(data);
+        if (pg_num >= data.meta.total_pages) {
+          console.log('END');
+          console.log(intervalId);
+          clearInterval(intervalId);
         }
       })
       .catch((err) => console.error(err));
   };
   getData();
-  setInterval(getData, 100000);
+  intervalId = setInterval(() => getData(intervalId), 10000);
 }
 
 export { dynamicChart };
