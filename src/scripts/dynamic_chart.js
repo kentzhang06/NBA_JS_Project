@@ -12,7 +12,7 @@ function displayYearsClickable(rookieYear) {
   for(let i = rookieYear; i < currentYear + 1; i++) {
     let childButton = document.createElement('div');
     childButton.className = "year-btn";
-    childButton.innerHTML = i;
+    childButton.innerHTML = `<div>${i}</div> <ion-icon name="basketball"></ion-icon>`;
     btnsContainer.appendChild(childButton);
   }
   console.log(currentYear);

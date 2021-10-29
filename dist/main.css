@@ -179,17 +179,32 @@ body a {
   align-items: center;
 }
 
+#years-btns {
+  display: grid;
+  grid-template-columns: 110px 110px;
+  grid-gap: 10px;
+  margin-left: 10px;
+}
+
 .year-btn {
-  border-radius: 50%;
-  width: 2.5em;
-  height: 2.5em;
-  position: absolute;
-  background: #ff9800;
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  color: orange;
+  font-size: 30px;
+  background-color: #1b1b1b;
   border: 2px solid black;
-  top: 4px;
-  left: 4px;
-  background-image: radial-gradient(circle at -5px 10px, transparent 15px, black 15px, black 17px, transparent 17px), radial-gradient(circle at 41px 25px, transparent 15px, black 15px, black 17px, transparent 17px), linear-gradient(110deg, transparent 22px, black 22px, black 24px, transparent 24px), linear-gradient(18deg, transparent 22px, black 22px, black 24px, transparent 24px);
-  background-size: 100% 100%;
+  margin-bottom: 5px;
+  transition: 0.6s;
+  padding: 3px;
+}
+
+.year-btn:hover {
+  background-color: black;
+  cursor: pointer;
 }
 
 .darkorange {
