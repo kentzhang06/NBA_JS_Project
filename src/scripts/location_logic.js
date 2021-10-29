@@ -1,4 +1,5 @@
-import {dynamicChart, accessData} from './dynamic_chart.js';
+import {accessData, displayYearsClickable} from './dynamic_chart.js';
+import { playersIDs } from './players.js';
 import {displayPlayer} from './images.js';
 
 function displayHelper(name) {
@@ -11,6 +12,7 @@ function displayHelper(name) {
   list.style.display = "none";
   image.style.display = "block";
   accessData(name);
+  displayYearsClickable(playersIDs[name].rookieYear);
 }
 
 function locationClicked(e) {
