@@ -10,7 +10,8 @@ function displayYearsClickable(rookieYear) {
   let btnsContainer = document.getElementById("years-btns");
 
   for(let i = rookieYear; i < currentYear + 1; i++) {
-    let childButton = document.createElement('button');
+    let childButton = document.createElement('div');
+    childButton.className = "year-btn";
     childButton.innerHTML = i;
     btnsContainer.appendChild(childButton);
   }

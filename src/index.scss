@@ -197,7 +197,29 @@ body {
 }
 
 #years-btns {
-  
+
+}
+
+.year-btn {
+  // width: 100px;
+  // height: 100px;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  // border-radius: 50%;
+  border-radius: 50%;
+  width: 2.5em;
+  height: 2.5em;
+  position: absolute;
+  background: #ff9800;
+  border: 2px solid black;
+  top: 4px;
+  left: 4px;
+  background-image: radial-gradient(circle at -5px 10px, transparent 15px, black 15px, black 17px,
+    transparent 17px), radial-gradient(circle at 41px 25px, transparent 15px, black 15px, black 17px, transparent 17px),
+    linear-gradient(110deg, transparent 22px, black 22px, black 24px, transparent 24px),
+    linear-gradient(18deg, transparent 22px, black 22px, black 24px, transparent 24px);
+  background-size: 100% 100%;
 }
 
 .darkorange {
