@@ -1,19 +1,31 @@
 import {displayYearsClickable} from './dynamic_chart.js';
+import { createChart } from './percentageChart.js';
 import Player from "./player";
 import { playersIDs } from './players.js';
 import {displayPlayer} from './images.js';
 
-function displayHelper(name) {
+import {fetchPlayer} from './apiUtil';
+
+async function displayHelper(name) {
   const map = document.getElementById("map");
   const btn = document.getElementById("back-btn");
   const list = document.getElementById("simplemaps_list");
   const image = document.getElementById("player-container");
-  const newPlayer = new Player(name);
-  console.log(newPlayer);
+  const chart = document.getElementById("mycanvas");
+  // const newPlayer = new Player(name);
+  // console.log(newPlayer);
+  // console.log(newPlayer.ast);
+  const res = await fetchPlayer(name);
+  let stats = res.data[0];
+  
   map.style.display = "none";
   btn.style.display = "block";
   list.style.display = "none";
   image.style.display = "block";
+  chart.style.display = "block";
+
+  createChart(stats.fg_pct, stats.fg3_pct, stats.ft_pct);
+
   displayYearsClickable(playersIDs[name].rookieYear);
 }
 

@@ -1,8 +1,10 @@
 import { fetchPlayer } from "./apiUtil";
+
 class Player {
   constructor(name) {
     this.name = name;
     this.setupStats();
+    this.ast; 
   }
 
   async setupStats() {

@@ -134,7 +134,7 @@ body a {
 }
 
 #canvas-container {
-  width: 70%;
+  width: 600px;
   position: fixed;
   top: 20%;
   left: 15%;
@@ -142,7 +142,8 @@ body a {
 
 #mycanvas {
   display: none;
-  background-color: transparent;
+  width: 400px;
+  height: 400px;
   z-index: 5;
 }
 
