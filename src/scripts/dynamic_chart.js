@@ -1,13 +1,8 @@
-import { fetchPlayerAvg } from "./apiUtil";
-
-async function accessData(playername) {
-  const data = await fetchPlayerAvg(playername);
-  console.log(data);
-}
-
 function displayYearsHeader() {
   let container = document.getElementById("years-header");
+  container.style.display = "block";
   let child = document.createElement('h1');
+  child.className = "seasons-header";
   child.innerHTML = "Seasons Played";
   container.appendChild(child);
 }
@@ -15,6 +10,7 @@ function displayYearsHeader() {
 function displayYearsClickable(rookieYear) {
   let currentYear = new Date().getFullYear();
   let btnsContainer = document.getElementById("years-btns");
+  btnsContainer.style.display = "grid";
 
   displayYearsHeader();
   for(let i = rookieYear; i < currentYear + 1; i++) {
@@ -26,4 +22,4 @@ function displayYearsClickable(rookieYear) {
   console.log(currentYear);
 }
 
-export { accessData, displayYearsClickable };
+export { displayYearsClickable };

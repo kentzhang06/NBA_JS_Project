@@ -1,4 +1,5 @@
-import {accessData, displayYearsClickable} from './dynamic_chart.js';
+import {displayYearsClickable} from './dynamic_chart.js';
+import Player from "./player";
 import { playersIDs } from './players.js';
 import {displayPlayer} from './images.js';
 
@@ -7,11 +8,11 @@ function displayHelper(name) {
   const btn = document.getElementById("back-btn");
   const list = document.getElementById("simplemaps_list");
   const image = document.getElementById("player-container");
+  const newPlayer = new Player(name);
   map.style.display = "none";
   btn.style.display = "block";
   list.style.display = "none";
   image.style.display = "block";
-  accessData(name);
   displayYearsClickable(playersIDs[name].rookieYear);
 }
 
@@ -117,17 +118,20 @@ function locationClicked(e) {
 function backBtnClicked(e) {
   const map = document.getElementById("map");
   const btn = document.getElementById("back-btn");
-  const graph = document.getElementById("mycanvas");
   const list = document.getElementById("simplemaps_list");
   const image = document.getElementById("player-container");
+  const yearsHeader = document.getElementById("years-header");
+  const yearsBtns = document.getElementById("years-btns");
   
   if (e.target.className === "back") {
-    graph.style.display = "none";
+
     map.style.display = "block";
     btn.style.display = "none";
     list.style.display = "block";
     image.style.display = "none";
-    document.getElementById("mycanvas").remove();
+    yearsBtns.innerHTML = "";
+    yearsHeader.innerHTML = "";
+
   }
 
 }
