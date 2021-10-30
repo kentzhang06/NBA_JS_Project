@@ -9,6 +9,7 @@ function displayHelper(name) {
   const list = document.getElementById("simplemaps_list");
   const image = document.getElementById("player-container");
   const newPlayer = new Player(name);
+  console.log(newPlayer);
   map.style.display = "none";
   btn.style.display = "block";
   list.style.display = "none";
