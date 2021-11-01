@@ -8,7 +8,9 @@ async function displayHelper(name) {
   const image = document.getElementById("player-container");
   let btnsContainer = document.getElementById("years-btns");
   const charts = document.getElementById("canvas-container");
-  
+  const body = document.getElementsByTagName('body')[0];
+  body.style.background =
+    `linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(${playersIDs[name].img}) no-repeat center center fixed`;
   charts.style.display = "flex";
   btnsContainer.style.display = "grid";
   map.style.display = "none";

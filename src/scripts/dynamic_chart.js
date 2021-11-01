@@ -1,6 +1,7 @@
 import { createPieChart } from "./percentageChart.js";
 import { createBarChart } from "./barChart.js";
 import { fetchPlayer } from "./apiUtil";
+import { playersIDs } from "./players.js";
 
 function displayYearsHeader() {
   let container = document.getElementById("years-header");
@@ -12,7 +13,10 @@ function displayYearsHeader() {
 }
 
 async function displayYearsClickable(rookieYear, name) {
-  let currentYear = new Date().getFullYear();
+  let currentYear = !playersIDs[name].endYear
+    ? new Date().getFullYear()
+    : playersIDs[name].endYear;
+    
   let btnsContainer = document.getElementById("years-btns");
 
   let res = await fetchPlayer(name, currentYear-1);
@@ -36,7 +40,6 @@ async function displayYearsClickable(rookieYear, name) {
     childButton.innerHTML = `<div>${i}</div> <ion-icon name="basketball"></ion-icon>`;
     childButton.addEventListener("click", async function () {
       res = await fetchPlayer(name, i);
-      console.log(res);
       stats = res.data[0];
       pieChart.destroy();
       barChart.destroy();
