@@ -8,9 +8,4 @@ async function fetchPlayer(playername, season) {
   return await response.json();
 }
 
-// async function fetchPlayerAvg(playername) {
-//   const data = await fetchPlayerHelper(playername);
-//   console.log(data);
-// }
-
 export { fetchPlayer };

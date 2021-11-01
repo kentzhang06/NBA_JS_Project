@@ -1,6 +1,7 @@
 function createBarChart(pts, asts, rebs, stls, blks, to, gp) {
-  let child = document.createElement("canvas");
-  let canvas = document.getElementById("mycanvas2");
+  let canvas = document.createElement("canvas");
+  canvas.setAttribute('id', "mycanvas2");
+  document.getElementById("canvas-container").appendChild(canvas);
 
   const data = {
     labels: [
@@ -53,7 +54,7 @@ function createBarChart(pts, asts, rebs, stls, blks, to, gp) {
     options: chartOptions
   });
 
-  // return barChart;
+  return barChart;
 }
 
 export {createBarChart};

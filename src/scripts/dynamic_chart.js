@@ -15,11 +15,11 @@ async function displayYearsClickable(rookieYear, name) {
   let currentYear = new Date().getFullYear();
   let btnsContainer = document.getElementById("years-btns");
 
-  let res = await fetchPlayer(name, currentYear);
+  let res = await fetchPlayer(name, currentYear-1);
   let stats = res.data[0];
 
-  createPieChart(stats.fg_pct, stats.fg3_pct, stats.ft_pct);
-  createBarChart(
+  let pieChart = createPieChart(stats.fg_pct, stats.fg3_pct, stats.ft_pct);
+  let barChart = createBarChart(
     stats.pts,
     stats.ast,
     stats.reb,
@@ -30,7 +30,7 @@ async function displayYearsClickable(rookieYear, name) {
   );
 
   displayYearsHeader();
-  for (let i = rookieYear; i < currentYear+1; i++) {
+  for (let i = rookieYear; i < currentYear; i++) {
     let childButton = document.createElement("div");
     childButton.className = "year-btn";
     childButton.innerHTML = `<div>${i}</div> <ion-icon name="basketball"></ion-icon>`;
@@ -38,10 +38,10 @@ async function displayYearsClickable(rookieYear, name) {
       res = await fetchPlayer(name, i);
       console.log(res);
       stats = res.data[0];
-      // pieChart.destroy();
-      // barChart.destroy();
-      createPieChart(stats.fg_pct, stats.fg3_pct, stats.ft_pct);
-      createBarChart(
+      pieChart.destroy();
+      barChart.destroy();
+      pieChart = createPieChart(stats.fg_pct, stats.fg3_pct, stats.ft_pct);
+      barChart = createBarChart(
         stats.pts,
         stats.ast,
         stats.reb,

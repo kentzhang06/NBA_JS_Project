@@ -1,10 +1,8 @@
 function createPieChart(fg, fg3, ft) {
-  let child = document.createElement("canvas");
-  let birdsCanvas = document.getElementById("mycanvas");
+  let canvas = document.createElement("canvas");
+  canvas.setAttribute("id", "mycanvas");
+  document.getElementById("canvas-container").appendChild(canvas);
 
-  // Chart.defaults.global.defaultFontFamily = "Lato";
-  // Chart.defaults.global.defaultFontSize = 18;
-  // console.log(player.fg_pct);
   let birdsData = {
     labels: ["Field Goal %", "3-Pointer %", "Free Throw %"],
     datasets: [
@@ -34,13 +32,13 @@ function createPieChart(fg, fg3, ft) {
     },
   };
 
-  let polarAreaChart = new Chart(birdsCanvas, {
+  let polarAreaChart = new Chart(canvas, {
     type: "polarArea",
     data: birdsData,
     options: chartOptions,
   });
 
-  // return polarAreaChart;
+  return polarAreaChart;
 }
 
 export {createPieChart};

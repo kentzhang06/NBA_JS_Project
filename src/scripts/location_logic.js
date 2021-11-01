@@ -7,9 +7,9 @@ async function displayHelper(name) {
   const list = document.getElementById("simplemaps_list");
   const image = document.getElementById("player-container");
   let btnsContainer = document.getElementById("years-btns");
-  // const charts = document.getElementById("canvas-container");
+  const charts = document.getElementById("canvas-container");
   
-  // charts.style.display = "flex";
+  charts.style.display = "flex";
   btnsContainer.style.display = "grid";
   map.style.display = "none";
   btn.style.display = "block";
@@ -138,7 +138,6 @@ function backBtnClicked(e) {
     charts.innerHTML = '';
     yearsBtns.innerHTML = '';
     yearsHeader.innerHTML = '';
-
   }
 
 }
