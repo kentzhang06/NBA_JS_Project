@@ -1,4 +1,5 @@
 function createPieChart(fg, fg3, ft) {
+  let child = document.createElement("canvas");
   let birdsCanvas = document.getElementById("mycanvas");
 
   // Chart.defaults.global.defaultFontFamily = "Lato";
@@ -38,6 +39,8 @@ function createPieChart(fg, fg3, ft) {
     data: birdsData,
     options: chartOptions,
   });
+
+  // return polarAreaChart;
 }
 
 export {createPieChart};

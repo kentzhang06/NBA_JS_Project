@@ -1,35 +1,23 @@
 import {displayYearsClickable} from './dynamic_chart.js';
-import { createPieChart } from './percentageChart.js';
-import { createBarChart } from './barChart.js';
-import Player from "./player";
 import { playersIDs } from './players.js';
-import {displayPlayer} from './images.js';
-
-import {fetchPlayer} from './apiUtil';
 
 async function displayHelper(name) {
   const map = document.getElementById("map");
   const btn = document.getElementById("back-btn");
   const list = document.getElementById("simplemaps_list");
   const image = document.getElementById("player-container");
-  const chart = document.getElementById("mycanvas");
-  // const newPlayer = new Player(name);
-  // console.log(newPlayer);
-  // console.log(newPlayer.ast);
-  const res = await fetchPlayer(name);
-  let stats = res.data[0];
+  let btnsContainer = document.getElementById("years-btns");
+  // const charts = document.getElementById("canvas-container");
   
+  // charts.style.display = "flex";
+  btnsContainer.style.display = "grid";
   map.style.display = "none";
   btn.style.display = "block";
   list.style.display = "none";
   image.style.display = "block";
-  chart.style.display = "block";
 
-  createPieChart(stats.fg_pct, stats.fg3_pct, stats.ft_pct);
-  console.log(stats.games_played)
-  createBarChart(stats.pts, stats.ast, stats.reb, stats.stl, stats.blk, stats.turnover, stats.games_played);
 
-  displayYearsClickable(playersIDs[name].rookieYear);
+  displayYearsClickable(playersIDs[name].rookieYear, name);
 }
 
 function locationClicked(e) {
@@ -124,7 +112,6 @@ function locationClicked(e) {
     case "sm_location_29":
       displayHelper("Pascal Siakam");
       break;
-
     default:
       break;
   }
@@ -138,6 +125,7 @@ function backBtnClicked(e) {
   const image = document.getElementById("player-container");
   const yearsHeader = document.getElementById("years-header");
   const yearsBtns = document.getElementById("years-btns");
+  const charts = document.getElementById("canvas-container");
   
   if (e.target.className === "back") {
 
@@ -145,8 +133,11 @@ function backBtnClicked(e) {
     btn.style.display = "none";
     list.style.display = "block";
     image.style.display = "none";
-    yearsBtns.innerHTML = "";
-    yearsHeader.innerHTML = "";
+    
+    // remove all child elements in these containers
+    charts.innerHTML = '';
+    yearsBtns.innerHTML = '';
+    yearsHeader.innerHTML = '';
 
   }
 
