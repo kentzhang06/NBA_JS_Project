@@ -151,12 +151,21 @@ body {
 #canvas-container {
   width: 600px;
   position: fixed;
-  top: 20%;
+  top: 40%;
   left: 15%;
+  display: flex;
 }
 
 // PIE GRAPH
 #mycanvas {
+  display: none;
+  width: 400px;
+  height: 400px;
+  z-index: 5;
+}
+
+// BAR GRAPH
+#mycanvas2 {
   display: none;
   width: 400px;
   height: 400px;
@@ -222,6 +231,7 @@ body {
 
 .year-btn:hover {
   background-color: black;
+  color: white;
   cursor: pointer;
 }
 

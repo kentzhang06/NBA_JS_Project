@@ -1,5 +1,6 @@
 import {displayYearsClickable} from './dynamic_chart.js';
-import { createChart } from './percentageChart.js';
+import { createPieChart } from './percentageChart.js';
+import { createBarChart } from './barChart.js';
 import Player from "./player";
 import { playersIDs } from './players.js';
 import {displayPlayer} from './images.js';
@@ -24,7 +25,9 @@ async function displayHelper(name) {
   image.style.display = "block";
   chart.style.display = "block";
 
-  createChart(stats.fg_pct, stats.fg3_pct, stats.ft_pct);
+  createPieChart(stats.fg_pct, stats.fg3_pct, stats.ft_pct);
+  console.log(stats.games_played)
+  createBarChart(stats.pts, stats.ast, stats.reb, stats.stl, stats.blk, stats.turnover, stats.games_played);
 
   displayYearsClickable(playersIDs[name].rookieYear);
 }
