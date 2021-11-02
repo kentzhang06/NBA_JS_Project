@@ -17,27 +17,27 @@ const playersIDs = {
   "Kevin Durant": {
     id: 140,
     rookieYear: 2007,
-    img: "https://cdn-wp.thesportsrush.com/2021/10/deaa6073-untitled-design-45.jpg",
+    img: "https://images.daznservices.com/di/library/sporting_news/f0/4a/kevin-durant-getty-122520-ftrjpg_128pm7lxd9q8m1ri8q2p7p8i6y.jpg?t=-1642609722&quality=100",
   },
   "Lamelo Ball": {
     id: 3547239,
     rookieYear: 2020,
-    img: "https://cdn.nba.com/manage/2021/10/lamelo-driving-iso-1568x882.jpg",
+    img: "https://cdn.nba.com/manage/2020/12/lamelo-ball-smiling-mavs.jpg",
   },
   "Zach Lavine": {
     id: 268,
     rookieYear: 2014,
-    img: "https://cdn.vox-cdn.com/thumbor/cUMHzf_hGYVMREBsWveDJyINq5s=/0x0:1600x900/1200x800/filters:focal(654x152:910x408)/cdn.vox-cdn.com/uploads/chorus_image/image/69159570/Zach8.0.jpg",
+    img: "https://media.nbcbayarea.com/2021/06/zach-lavine-chicago-bulls-usatsi.jpg?quality=85&strip=all",
   },
   "Collin Sexton": {
     id: 413,
     rookieYear: 2018,
-    img: "https://thumbor.forbes.com/thumbor/fit-in/1200x0/filters%3Aformat%28jpg%29/https%3A%2F%2Fspecials-images.forbesimg.com%2Fimageserve%2F5f2c3e25222b461bd24955ad%2F0x0.jpg",
+    img: "https://nypost.com/wp-content/uploads/sites/2/2021/07/Collin-Sexton.jpg?quality=80&strip=all",
   },
   "Luka Doncic": {
     id: 132,
     rookieYear: 2018,
-    img: "https://sportshub.cbsistatic.com/i/r/2020/12/21/20007c35-440a-435b-b914-bd086c25b97b/thumbnail/1200x675/c080185ca05b94bea9e7cfb38a17cbc6/luka-doncic.jpg",
+    img: "https://e0.365dm.com/21/10/2048x1152/skysports-nba-luka-doncic-dallas-mavericks_5554205.jpg",
   },
   "Nikola Jokic": {
     id: 246,
@@ -47,22 +47,22 @@ const playersIDs = {
   "Jerami Grant": {
     id: 182,
     rookieYear: 2014,
-    img: "https://lastwordonsports.com/basketball/wp-content/uploads/sites/9/2021/03/Screen-Shot-2021-03-22-at-4.41.12-PM.jpg",
+    img: "https://www.gannett-cdn.com/presto/2021/02/10/PDTF/6951ef22-0015-4fba-98e0-68622b89bf78-02092021_pistons_jh-32.jpg",
   },
   "John Wall": {
     id: 467,
     rookieYear: 2010,
-    img: "https://cdn.nba.com/manage/2021/09/john-wall-looks-1568x882.jpg",
+    img: "https://cdn.nba.com/manage/2021/09/john-wall-dribbles.jpg",
   },
   "Domantas Sabonis": {
     id: 406,
     rookieYear: 2016,
-    img: "https://cdn.vox-cdn.com/thumbor/ZNdTDsdX0lBHAiH6GoWXN1K1FA4=/0x0:3149x2100/1200x800/filters:focal(934x385:1436x887)/cdn.vox-cdn.com/uploads/chorus_image/image/66957109/1192098662.jpg.0.jpg",
+    img: "https://cdn.nba.com/manage/2020/02/domantas-sabonis-smiles-reacts.jpg",
   },
   "Kawhi Leonard": {
     id: 274,
     rookieYear: 2011,
-    img: "https://sportshub.cbsistatic.com/i/r/2021/09/18/86bfbcf5-ae82-4415-84ea-dfd506738ae8/thumbnail/1200x675/4a610c4f49c18c4a89e8c733df39ac09/kawhi-leonard-clippers.jpg",
+    img: "https://images.daznservices.com/di/library/sporting_news/e6/ea/kawhi-leonard-getty-112019-ftrjpg_48uvfykxdugc1hkicboziuueh.jpg?t=-1889813778&quality=100",
   },
   "Kobe Bryant": {
     id: 1043,
@@ -78,12 +78,12 @@ const playersIDs = {
   "Jimmy Butler": {
     id: 79,
     rookieYear: 2011,
-    img: "https://www.sportsnet.ca/wp-content/uploads/2020/12/jimmy-butler-heat-1.jpg",
+    img: "https://images2.minutemediacdn.com/image/fetch/w_2000,h_2000,c_fit/https%3A%2F%2F8points9seconds.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2020%2F03%2F1211815987.jpeg",
   },
   "Giannis Antetokounmpo": {
     id: 15,
     rookieYear: 2013,
-    img: "https://cdn.vox-cdn.com/thumbor/CHt3IJDbOa3RyPj904qZBVUDdu0=/0x0:2695x1781/1200x800/filters:focal(1079x450:1509x880)/cdn.vox-cdn.com/uploads/chorus_image/image/69578097/1328249149.0.jpg",
+    img: "https://thespun.com/wp-content/uploads/2019/04/GettyImages-949288546.jpg",
   },
   "Karl Anthony Towns": {
     id: 447,
