@@ -88,27 +88,27 @@ const playersIDs = {
   "Karl Anthony Towns": {
     id: 447,
     rookieYear: 2015,
-    img: "https://www.nj.com/resizer/6jTPHFWjkSNbEiO_BNpNujsMMKg=/1280x0/smart/cloudfront-us-east-1.images.arcpublishing.com/advancelocal/VIV6UWBMQBFRNAR56MSVGJDTHA.jpg",
+    img: "https://images.daznservices.com/di/library/sporting_news/2f/9b/karl-anthony-towns-getty-121218-ftrjpg_1bwgwkri0bcb31s0vuk5tyzt4z.jpg?t=-1502360201&quality=100",
   },
   "Zion Williamson": {
     id: 666969,
     rookieYear: 2019,
-    img: "https://cdn.vox-cdn.com/thumbor/FG1HjxIUhiCjv6hxngn10aqwtZc=/0x0:3136x4704/1200x800/filters:focal(1112x1364:1612x1864)/cdn.vox-cdn.com/uploads/chorus_image/image/69169477/1232427714.0.jpg",
+    img: "https://www.nba.com/pelicans/sites/pelicans/files/cp-zion-williamson-1920-v2.jpg",
   },
   "RJ Barrett": {
     id: 666423,
     rookieYear: 2019,
-    img: "https://cdn.newsday.com/polopoly_fs/1.50406278.1635653164!/httpImage/image.jpg_gen/derivatives/landscape_1280/image.jpg",
+    img: "https://staticg.sportskeeda.com/editor/2021/10/66dbd-16356601744912-1920.jpg",
   },
   "Shai Gilgeous Alexander": {
     id: 175,
     rookieYear: 2018,
-    img: "https://i.cbc.ca/1.5428309.1579120918!/fileImage/httpImage/gilgeous-alexander-20191102.jpg",
+    img: "https://images.daznservices.com/di/library/NBA_Global_CMS_image_storage/16/18/gilgeous-alexander-ftrjpg_d6s5mfrukm3x1e0n6i6iqgucm.jpg?t=-1564391265&quality=80",
   },
   "Markelle Fultz": {
     id: 165,
     rookieYear: 2017,
-    img: "https://sportshub.cbsistatic.com/i/r/2020/04/01/043a35ce-df68-4708-917f-e654a19d591a/thumbnail/1200x675/9ab4ce8a71510e20b1fc13e64aabe992/markelle-fultz.jpg",
+    img: "https://images.daznservices.com/di/library/NBA_Global_CMS_image_storage/b9/b8/fultz_1dfnnvpx5v37g1clywaepyoha5.jpg?t=2087009518&w=1920&h=1080",
   },
   "Joel Embiid": {
     id: 145,
@@ -118,37 +118,37 @@ const playersIDs = {
   "Devin Booker": {
     id: 57,
     rookieYear: 2015,
-    img: "https://cdn.nba.com/manage/2021/06/GettyImages-1231030447-scaled.jpg",
+    img: "https://cdn.nba.com/manage/2021/05/bookerarsenal1920.jpg",
   },
   "Damian Lillard": {
     id: 278,
     rookieYear: 2012,
-    img: "https://cdn-media.theathletic.com/lgbKSa0OszhL_lgbKSa0OszhL_7VTAlkJTXlmm_original_1440x960.jpg",
+    img: "https://images.alphacoders.com/927/thumb-1920-927780.jpg",
   },
   "Deaaron Fox": {
     id: 161,
     rookieYear: 2017,
-    img: "https://www.si.com/.image/t_share/MTgwOTE2MDU5MTUzMzc2NjE2/deaaron-fox-kings.jpg",
+    img: "https://images.daznservices.com/di/library/NBA_Global_CMS_image_storage/4/5c/deaaron-fox_fw7d4vfxs3pb1op03m887gt3z.png?t=1985087160&quality=80",
   },
   "Dejounte Murray": {
     id: 334,
     rookieYear: 2016,
-    img: "https://images2.minutemediacdn.com/image/fetch/c_fill,g_auto,f_auto,h_1067,w_1600/http%3A%2F%2Fhoopshabit.com%2Fwp-content%2Fuploads%2Fgetty-images%2F2018%2F08%2F1198342284.jpeg",
+    img: "https://d19fv2ziequ6ig.cloudfront.net/images/2020/8/3/Dejounte_Murray.jpg?width=1920&height=1080&mode=crop&quality=80&format=jpg",
   },
   "Pascal Siakam": {
     id: 416,
     rookieYear: 2016,
-    img: "https://images.spot.im/v1/production/tmysxn9kqioh6oxuwgc0",
+    img: "https://images.daznservices.com/di/library/Sporting_News_CA_CMS_image_storage/b2/26/pascal-siakam-10052018-getty-ftr_131n8s3r621kl1jxut5ube19fw.jpg?t=237039095&quality=100",
   },
   "Donovan Mitchell": {
     id: 322,
     rookieYear: 2017,
-    img: "https://cdn.vox-cdn.com/thumbor/5njO4dmRKoG82Ya35wAEdihy__M=/0x0:3174x2116/1200x800/filters:focal(1393x429:1899x935)/cdn.vox-cdn.com/uploads/chorus_image/image/69750066/usa_today_16154771.0.jpg",
+    img: "https://wallpaperaccess.com/full/1383123.jpg",
   },
   "Bradley Beal": {
     id: 37,
     rookieYear: 2012,
-    img: "https://www.boston.com/wp-content/uploads/2020/07/Wizards_Beal_Basketball_31092.jpg",
+    img: "https://i2.wp.com/paceandspacehoops.com/wp-content/uploads/2019/01/bradley-beal2.jpg?fit=1920%2C1080&ssl=1",
   },
 };
 
