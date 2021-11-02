@@ -176,17 +176,18 @@ body {
 #mycanvas {
   display: none;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 400px;
-  height: 400px;
+  width: 600px;
+  height: 600px;
   z-index: 5;
 }
 
 // BAR GRAPH
 #mycanvas2 {
   display: none;
-  background-color: #8b7e7e;
+  background-color: rgba(0, 0, 0, 0.6);
   width: 400px;
   height: 400px;
+  margin-left: 10px;
   z-index: 5;
 }
 

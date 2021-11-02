@@ -8,9 +8,9 @@ function createPieChart(fg, fg3, ft) {
     datasets: [
       {
         data: [
-          fg, 
-          fg3, 
-          ft
+          fg*100, 
+          fg3*100, 
+          ft*100
         ],
         backgroundColor: [
           "rgba(255, 0, 0, 0.6)",
@@ -33,22 +33,17 @@ function createPieChart(fg, fg3, ft) {
     plugins: {
       legend: {
         labels: {
-          color: "red",
+          color: "white",
         },
       },
     },
     scales: {
       r: {
-        max: 1,
-        min: -1,
         ticks: {
-          color: "red",
-          backdropColor: "green"
+          color: "white",
+          showLabelBackdrop: false
         }
       },
-      pointLabels: {
-        color: "red"
-      }
     },
   };
 

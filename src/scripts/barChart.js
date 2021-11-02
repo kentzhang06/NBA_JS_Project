@@ -4,17 +4,10 @@ function createBarChart(pts, asts, rebs, stls, blks, to) {
   document.getElementById("canvas-container").appendChild(canvas);
 
   const data = {
-    labels: [
-      "Points",
-      "Assists",
-      "Rebounds",
-      "Steals",
-      "Blocks",
-      "Turnover",
-    ],
+    labels: ["Points", "Assists", "Rebounds", "Steals", "Blocks", "Turnover"],
     datasets: [
       {
-        label: "My First Dataset",
+        label: null,
         data: [pts, asts, rebs, stls, blks, to],
         backgroundColor: [
           "rgba(255, 99, 132)",
@@ -38,11 +31,37 @@ function createBarChart(pts, asts, rebs, stls, blks, to) {
   };
 
   let chartOptions = {
-      scales: {
-        y: {
-          beginAtZero: true,
+    scales: {
+      y: {
+        beginAtZero: true,
+        ticks: {
+          color: "white",
+          showLabelBackdrop: false,
         },
       },
+      x: {
+        ticks: {
+          color: "white"
+        }
+      }
+    },
+    plugins: {
+      legend: {
+        display: false
+      },
+      title: {
+        display: true,
+        color: "white",
+        text: "Season Averages",
+        font: {
+          size: 30
+        },
+        padding: {
+          top: 10,
+          bottom: 20
+        }
+      }
+    }
   };
 
   let barChart = new Chart(canvas, {
