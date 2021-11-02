@@ -3,9 +3,17 @@ import { createBarChart } from "./barChart.js";
 import { fetchPlayer } from "./apiUtil";
 import { playersIDs } from "./players.js";
 
+function displayPlayerHeader(name) {
+  let container = document.getElementById("player-container");
+  let child = document.createElement("h1");
+  child.className = "player-header";
+  child.innerHTML = name;
+  container.appendChild(child);
+}
+
 function displayYearsHeader() {
   let container = document.getElementById("years-header");
-  container.style.display = "block";
+  container.style.display = "flex";
   let child = document.createElement("h1");
   child.className = "seasons-header";
   child.innerHTML = "Seasons Played";
@@ -34,6 +42,7 @@ async function displayYearsClickable(rookieYear, name) {
   );
 
   displayYearsHeader();
+  displayPlayerHeader(name);
   for (let i = rookieYear; i < currentYear; i++) {
     let childButton = document.createElement("div");
     childButton.className = "year-btn";

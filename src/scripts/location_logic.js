@@ -8,7 +8,10 @@ async function displayHelper(name) {
   const image = document.getElementById("player-container");
   let btnsContainer = document.getElementById("years-btns");
   const charts = document.getElementById("canvas-container");
+  const instructions = document.getElementById("instructions");
+  const logo = document.getElementsByClassName("heading-logo")[0];
   const body = document.getElementsByTagName('body')[0];
+
   body.style.background =
     `linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(${playersIDs[name].img}) no-repeat center center fixed`;
   charts.style.display = "flex";
@@ -17,6 +20,8 @@ async function displayHelper(name) {
   btn.style.display = "block";
   list.style.display = "none";
   image.style.display = "block";
+  instructions.style.display = "none";
+  logo.style.display = "none";
 
 
   displayYearsClickable(playersIDs[name].rookieYear, name);
@@ -128,6 +133,9 @@ function backBtnClicked(e) {
   const yearsHeader = document.getElementById("years-header");
   const yearsBtns = document.getElementById("years-btns");
   const charts = document.getElementById("canvas-container");
+  const instructions = document.getElementById("instructions");
+  const logo = document.getElementsByClassName("heading-logo")[0];
+  const playerName = document.getElementById("player-container");
   
   if (e.target.className === "back") {
 
@@ -135,8 +143,11 @@ function backBtnClicked(e) {
     btn.style.display = "none";
     list.style.display = "block";
     image.style.display = "none";
+    instructions.style.display = "flex";
+    logo.style.display = "flex";
     
     // remove all child elements in these containers
+    playerName.innerHTML = '';
     charts.innerHTML = '';
     yearsBtns.innerHTML = '';
     yearsHeader.innerHTML = '';

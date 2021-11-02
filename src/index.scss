@@ -95,6 +95,10 @@ body {
   }
 }
 
+.seasons-header {
+  color: white;
+}
+
 // NAV BAR
 .main-nav {
   display: flex;
@@ -164,8 +168,8 @@ body {
   width: 600px;
   // background-color: #8b7e7e;
   position: fixed;
-  top: 40%;
-  left: 15%;
+  top: 30%;
+  left: 18%;
   display: flex;
 }
 
@@ -223,7 +227,7 @@ body {
   display: grid;
   grid-template-columns: 110px 110px;
   grid-gap: 10px;
-  margin-left: 10px;
+  margin-left: 2%;
 }
 
 .year-btn {
@@ -249,11 +253,20 @@ body {
 }
 
 #years-header {
-  width: 230px;
+  display: flex;
+  justify-content: space-between;
   text-align: center;
-  font-size: 30px;
-  margin-left: 10px;
-  margin-bottom: 10px;
+  color: white;
+  font-size: 2em;
+  margin: 7% 10% 1% 2.5%;
+}
+
+.player-header {
+  font-size: 5em;
+  color: white;
+  position: absolute;
+  top: 65%;
+  left: 53%;
 }
 
 .darkorange {
