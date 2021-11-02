@@ -14,7 +14,7 @@ function createPieChart(fg, fg3, ft) {
         ],
         backgroundColor: [
           "rgba(255, 0, 0, 0.6)",
-          "rgba(0, 255,200, 0.6)",
+          "rgba(0, 255, 200, 0.6)",
           "rgba(200, 0, 200, 0.6)",
         ],
         borderColor: "rgba(0, 0, 0, 0.8)",
@@ -25,10 +25,30 @@ function createPieChart(fg, fg3, ft) {
   let chartOptions = {
     startAngle: -Math.PI / 3,
     legend: {
-      position: 'right',
+      position: "right",
     },
     animation: {
       animateRotate: true,
+    },
+    plugins: {
+      legend: {
+        labels: {
+          color: "red",
+        },
+      },
+    },
+    scales: {
+      r: {
+        max: 1,
+        min: -1,
+        ticks: {
+          color: "red",
+          backdropColor: "green"
+        }
+      },
+      pointLabels: {
+        color: "red"
+      }
     },
   };
 

@@ -157,6 +157,7 @@ body a {
 
 #mycanvas {
   display: none;
+  background-color: rgba(0, 0, 0, 0.6);
   width: 400px;
   height: 400px;
   z-index: 5;
@@ -164,6 +165,7 @@ body a {
 
 #mycanvas2 {
   display: none;
+  background-color: #8b7e7e;
   width: 400px;
   height: 400px;
   z-index: 5;
@@ -204,6 +206,7 @@ body a {
 
 #years-btns {
   display: grid;
+  width: 240px;
   grid-template-columns: 110px 110px;
   grid-gap: 10px;
   margin-left: 2%;

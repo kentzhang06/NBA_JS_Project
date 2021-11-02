@@ -37,8 +37,7 @@ async function displayYearsClickable(rookieYear, name) {
     stats.reb,
     stats.stl,
     stats.blk,
-    stats.turnover,
-    stats.games_played
+    stats.turnover
   );
 
   displayYearsHeader();

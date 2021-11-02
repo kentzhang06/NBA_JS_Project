@@ -1,4 +1,4 @@
-function createBarChart(pts, asts, rebs, stls, blks, to, gp) {
+function createBarChart(pts, asts, rebs, stls, blks, to) {
   let canvas = document.createElement("canvas");
   canvas.setAttribute('id', "mycanvas2");
   document.getElementById("canvas-container").appendChild(canvas);
@@ -11,12 +11,11 @@ function createBarChart(pts, asts, rebs, stls, blks, to, gp) {
       "Steals",
       "Blocks",
       "Turnover",
-      "Games Played",
     ],
     datasets: [
       {
         label: "My First Dataset",
-        data: [pts, asts, rebs, stls, blks, to, gp],
+        data: [pts, asts, rebs, stls, blks, to],
         backgroundColor: [
           "rgba(255, 99, 132)",
           "rgba(255, 159, 64)",
@@ -24,7 +23,6 @@ function createBarChart(pts, asts, rebs, stls, blks, to, gp) {
           "rgba(75, 192, 192)",
           "rgba(54, 162, 235)",
           "rgba(153, 102, 255)",
-          "rgba(201, 203, 207)",
         ],
         borderColor: [
           "rgb(255, 99, 132)",
@@ -33,7 +31,6 @@ function createBarChart(pts, asts, rebs, stls, blks, to, gp) {
           "rgb(75, 192, 192)",
           "rgb(54, 162, 235)",
           "rgb(153, 102, 255)",
-          "rgb(201, 203, 207)",
         ],
         borderWidth: 1,
       },
