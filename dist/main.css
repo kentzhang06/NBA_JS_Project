@@ -58,6 +58,7 @@ body a {
   width: 200px;
 }
 .heading-logo h2 {
+  color: white;
   font-size: 40px;
 }
 
@@ -92,7 +93,15 @@ body a {
   border-bottom: #0c0c0c;
 }
 .main-nav h3 {
+  color: white;
   margin-right: 15px;
+}
+.main-nav ion-icon {
+  color: orange;
+  transition: 0.6s;
+}
+.main-nav ion-icon:hover {
+  color: darkgray;
 }
 
 .menu-list {
