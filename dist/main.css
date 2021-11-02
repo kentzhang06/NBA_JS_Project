@@ -2,7 +2,8 @@
   !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[1].use[1]!./node_modules/sass-loader/dist/cjs.js!./src/index.scss ***!
   \*************************************************************************************************************************************/
 body {
-  background: url("../images/basketball-background.jpg") no-repeat center center fixed;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%), url("../images/basketball-background.jpg") no-repeat center center fixed;
+  background-size: 100% 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -57,16 +58,20 @@ body a {
   width: 200px;
 }
 .heading-logo h2 {
+  color: white;
   font-size: 40px;
 }
 
 #instructions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
   top: 10%;
   right: 0.5%;
   width: 18%;
-  height: 800px;
-  background-color: black;
+  height: 50%;
+  background-color: #1b1b1b;
   color: orange;
   line-height: 1.6;
   padding: 8px;
@@ -80,6 +85,10 @@ body a {
   color: red;
 }
 
+.seasons-header {
+  color: white;
+}
+
 .main-nav {
   display: flex;
   justify-content: right;
@@ -88,7 +97,15 @@ body a {
   border-bottom: #0c0c0c;
 }
 .main-nav h3 {
+  color: white;
   margin-right: 15px;
+}
+.main-nav ion-icon {
+  color: orange;
+  transition: 0.6s;
+}
+.main-nav ion-icon:hover {
+  color: darkgray;
 }
 
 .menu-list {
@@ -130,12 +147,28 @@ body a {
   font-weight: bold;
 }
 
+#canvas-container {
+  width: 600px;
+  position: fixed;
+  top: 30%;
+  left: 18%;
+  display: flex;
+}
+
 #mycanvas {
   display: none;
-  position: fixed;
-  top: 15%;
-  left: 20%;
-  color: black;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 600px;
+  height: 600px;
+  z-index: 5;
+}
+
+#mycanvas2 {
+  display: none;
+  background-color: rgba(0, 0, 0, 0.6);
+  width: 400px;
+  height: 400px;
+  margin-left: 10px;
   z-index: 5;
 }
 
@@ -147,13 +180,78 @@ body a {
 }
 
 .back {
-  background-color: black;
+  background-color: #1b1b1b;
   color: #eb9b08;
   font-size: 25px;
-  border-radius: 2px;
-  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  width: 100px;
+  padding: 10px;
+  transition: 0.8s;
+}
+
+.back:hover {
+  background-color: white;
+  cursor: pointer;
 }
 
 #player-container {
   display: none;
+}
+
+#pop-up {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#years-btns {
+  display: grid;
+  width: 240px;
+  grid-template-columns: 110px 110px;
+  grid-gap: 10px;
+  margin-left: 2%;
+}
+
+.year-btn {
+  width: 100px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 10px;
+  color: orange;
+  font-size: 30px;
+  background-color: #1b1b1b;
+  border: 2px solid black;
+  margin-bottom: 5px;
+  transition: 0.6s;
+  padding: 3px;
+}
+
+.year-btn:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+
+#years-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  margin: 7% 10% 1% 2.5%;
+}
+
+.player-header {
+  font-size: 5em;
+  color: white;
+  position: absolute;
+  top: 65%;
+  left: 53%;
+}
+
+.darkorange {
+  color: darkorange;
 }

@@ -1,121 +1,156 @@
-import {dynamicChart} from './dynamic_chart.js';
-import {displayPlayer} from './images.js';
+import {displayYearsClickable} from './dynamic_chart.js';
+import { playersIDs } from './players.js';
 
-function displayHelper(map, graph, btn, list, image) {
+async function displayHelper(name) {
+  const map = document.getElementById("map");
+  const btn = document.getElementById("back-btn");
+  const list = document.getElementById("simplemaps_list");
+  const image = document.getElementById("player-container");
+  let btnsContainer = document.getElementById("years-btns");
+  const charts = document.getElementById("canvas-container");
+  const instructions = document.getElementById("instructions");
+  const logo = document.getElementsByClassName("heading-logo")[0];
+  const body = document.getElementsByTagName('body')[0];
+
+  body.style.background =
+    `linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(${playersIDs[name].img}) no-repeat center center fixed`;
+  charts.style.display = "flex";
+  btnsContainer.style.display = "grid";
   map.style.display = "none";
-  graph.style.display = "block";
   btn.style.display = "block";
   list.style.display = "none";
   image.style.display = "block";
+  instructions.style.display = "none";
+  logo.style.display = "none";
+
+
+  displayYearsClickable(playersIDs[name].rookieYear, name);
 }
 
-function locationClicked(e, map, graph, btn, list, image) {
-  if (e.target.className.baseVal === "sm_location_0") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Devin Booker');
-  }else if (e.target.className.baseVal === "sm_location_1") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Deaaron Fox');
-  }
-  else if (e.target.className.baseVal === "sm_location_2" || e.target.className.baseVal === "sm_Location_2") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Stephen Curry');
-  }else if (e.target.className.baseVal === "sm_location_3" || e.target.className.baseVal === "sm_Location_3") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Kobe Bryant');
-  }else if (e.target.className.baseVal === "sm_location_4" || e.target.className.baseVal === "sm_Location_4") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Kawhi Leonard');
-  }else if (e.target.className.baseVal === "sm_location_5" || e.target.className.baseVal === "sm_Location_5") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Nikola Jokic');
-  }else if (e.target.className.baseVal === "sm_location_6" || e.target.className.baseVal === "sm_Location_6") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Markelle Fultz');
-  }else if (e.target.className.baseVal === "sm_location_7" || e.target.className.baseVal === "sm_Location_7") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Jimmy Butler');
-  }else if (e.target.className.baseVal === "sm_location_8" || e.target.className.baseVal === "sm_Location_8") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Trae Young');
-  }else if (e.target.className.baseVal === "sm_location_9" || e.target.className.baseVal === "sm_Location_9") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Zach Lavine');
-  }else if (e.target.className.baseVal === "sm_location_10" || e.target.className.baseVal === "sm_Location_10") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Domantas Sabonis');
-  }else if (e.target.className.baseVal === "sm_location_11" || e.target.className.baseVal === "sm_Location_11") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Zion Williamson');
-  }else if (e.target.className.baseVal === "sm_location_12" || e.target.className.baseVal === "sm_Location_12") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Jayson Tatum');
-  }else if (e.target.className.baseVal === "sm_location_13" || e.target.className.baseVal === "sm_Location_13") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Jerami Grant');
-  }else if (e.target.className.baseVal === "sm_location_14" || e.target.className.baseVal === "sm_Location_14") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Karl Anthony Towns');
-  }else if (e.target.className.baseVal === "sm_location_15" || e.target.className.baseVal === "sm_Location_15") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('RJ Barrett');
-  }else if (e.target.className.baseVal === "sm_location_16" || e.target.className.baseVal === "sm_Location_16") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Kevin Durant');
-  }else if (e.target.className.baseVal === "sm_location_17" || e.target.className.baseVal === "sm_Location_17") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Lamelo Ball');
-  }else if (e.target.className.baseVal === "sm_location_18" || e.target.className.baseVal === "sm_Location_18") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Collin Sexton');
-  }else if (e.target.className.baseVal === "sm_location_19" || e.target.className.baseVal === "sm_Location_19") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Shai Gilgeous Alexander');
-  }else if (e.target.className.baseVal === "sm_location_20" || e.target.className.baseVal === "sm_Location_20") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Damian Lillard');
-  }else if (e.target.className.baseVal === "sm_location_21" || e.target.className.baseVal === "sm_Location_21") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Joel Embiid');
-  }else if (e.target.className.baseVal === "sm_location_22" || e.target.className.baseVal === "sm_Location_22") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Ja Morant');
-  }else if (e.target.className.baseVal === "sm_location_23" || e.target.className.baseVal === "sm_Location_23") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Luka Doncic');
-  }else if (e.target.className.baseVal === "sm_location_24" || e.target.className.baseVal === "sm_Location_24") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('John Wall');
-  }else if (e.target.className.baseVal === "sm_location_25" || e.target.className.baseVal === "sm_Location_25") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Dejounte Murray');
-  }else if (e.target.className.baseVal === "sm_location_26" || e.target.className.baseVal === "sm_Location_26") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Donovan Mitchell');
-  }else if (e.target.className.baseVal === "sm_location_27" || e.target.className.baseVal === "sm_Location_27") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Giannis Antetokounmpo');
-  }else if (e.target.className.baseVal === "sm_location_28" || e.target.className.baseVal === "sm_Location_28") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Bradley Beal');
-  }else if (e.target.className.baseVal === "sm_location_29" || e.target.className.baseVal === "sm_Location_29") {
-    displayHelper(map, graph, btn, list, image);
-    dynamicChart('Pascal Siakam');
+function locationClicked(e) {
+  switch (e.target.className.baseVal) {
+    case "sm_location_0":
+      displayHelper("Devin Booker");
+      break;
+    case "sm_location_1":
+      displayHelper("Deaaron Fox");
+      break;
+    case "sm_location_2":
+      displayHelper("Stephen Curry");
+      break;
+    case "sm_location_3":
+      displayHelper("Kobe Bryant");
+      break;
+    case "sm_location_4":
+      displayHelper("Kawhi Leonard");
+      break;
+    case "sm_location_5":
+      displayHelper("Nikola Jokic");
+      break;
+    case "sm_location_6":
+      displayHelper("Markelle Fultz");
+      break;
+    case "sm_location_7":
+      displayHelper("Jimmy Butler");
+      break;
+    case "sm_location_8":
+      displayHelper("Trae Young");
+      break;
+    case "sm_location_9":
+      displayHelper("Zach Lavine");
+      break;
+    case "sm_location_10":
+      displayHelper("Domantas Sabonis");
+      break;
+    case "sm_location_11":
+      displayHelper("Zion Williamson");
+      break;
+    case "sm_location_12":
+      displayHelper("Jayson Tatum");
+      break;
+    case "sm_location_13":
+      displayHelper("Jerami Grant");
+      break;
+    case "sm_location_14":
+      displayHelper("Karl Anthony Towns");
+      break;
+    case "sm_location_15":
+      displayHelper("RJ Barrett");
+      break;
+    case "sm_location_16":
+      displayHelper("Kevin Durant");
+      break;
+    case "sm_location_17":
+      displayHelper("Lamelo Ball");
+      break;
+    case "sm_location_18":
+      displayHelper("Collin Sexton");
+      break;
+    case "sm_location_19":
+      displayHelper("Shai Gilgeous Alexander");
+      break;
+    case "sm_location_20":
+      displayHelper("Damian Lillard");
+      break;
+    case "sm_location_21":
+      displayHelper("Joel Embiid");
+      break;
+    case "sm_location_22":
+      displayHelper("Ja Morant");
+      break;
+    case "sm_location_23":
+      displayHelper("Luka Doncic");
+      break;
+    case "sm_location_24":
+      displayHelper("John Wall");
+      break;
+    case "sm_location_25":
+      displayHelper("Dejounte Murray");
+      break;
+    case "sm_location_26":
+      displayHelper("Donovan Mitchell");
+      break;
+    case "sm_location_27":
+      displayHelper("Giannis Antetokounmpo");
+      break;
+    case "sm_location_28":
+      displayHelper("Bradley Beal");
+      break;
+    case "sm_location_29":
+      displayHelper("Pascal Siakam");
+      break;
+    default:
+      break;
   }
   
 }
 
-function backBtnClicked(e, map, graph, btn, list, image) {
-
+function backBtnClicked(e) {
+  const map = document.getElementById("map");
+  const btn = document.getElementById("back-btn");
+  const list = document.getElementById("simplemaps_list");
+  const image = document.getElementById("player-container");
+  const yearsHeader = document.getElementById("years-header");
+  const yearsBtns = document.getElementById("years-btns");
+  const charts = document.getElementById("canvas-container");
+  const instructions = document.getElementById("instructions");
+  const logo = document.getElementsByClassName("heading-logo")[0];
+  const playerName = document.getElementById("player-container");
   
   if (e.target.className === "back") {
-    graph.style.display = "none";
+
     map.style.display = "block";
     btn.style.display = "none";
     list.style.display = "block";
     image.style.display = "none";
-    document.getElementById("mycanvas").remove();
+    instructions.style.display = "flex";
+    logo.style.display = "flex";
     
+    // remove all child elements in these containers
+    playerName.innerHTML = '';
+    charts.innerHTML = '';
+    yearsBtns.innerHTML = '';
+    yearsHeader.innerHTML = '';
   }
 
 }

@@ -1,13 +1,13 @@
-var simplemaps_usmap_mapdata={
+var simplemaps_usmap_mapdata = {
   main_settings: {
     //General settings
-		width: "responsive", //or 'responsive'
+    width: "responsive", //or 'responsive'
     background_color: "#000000",
     background_transparent: "yes",
     popups: "detect",
-    
-		//State defaults
-		state_description: "",
+
+    //State defaults
+    state_description: "",
     state_color: "#000000",
     state_hover_color: "#eb9b08",
     state_url: "",
@@ -15,9 +15,9 @@ var simplemaps_usmap_mapdata={
     border_color: "#ffffff",
     all_states_inactive: "no",
     all_states_zoomable: "yes",
-    
-		//Location defaults
-		location_description: "Location description",
+
+    //Location defaults
+    location_description: "Location description",
     location_color: "#03A89E",
     location_opacity: 0.8,
     location_hover_opacity: 1,
@@ -30,17 +30,16 @@ var simplemaps_usmap_mapdata={
     location_pulse: "yes",
     all_locations_inactive: "no",
     all_locations_hidden: "no",
-    
-		//Label defaults
-		label_color: "#ffffff",
+
+    //Label defaults
+    label_color: "#ffffff",
     label_hover_color: "#ffffff",
     label_size: 22,
     label_font: "Arial",
     hide_labels: "no",
 
-   
-		//Zoom settings
-		manual_zoom: "yes",
+    //Zoom settings
+    manual_zoom: "yes",
     back_image: "no",
     arrow_box: "yes",
     navigation_size: "40",
@@ -54,24 +53,24 @@ var simplemaps_usmap_mapdata={
     zoom_out_incrementally: "yes",
     zoom_percentage: 0.99,
     zoom_time: 0.5,
-    
-		//Popup settings
-		popup_color: "white",
+
+    //Popup settings
+    popup_color: "white",
     popup_opacity: 0.9,
     popup_shadow: 1,
     popup_corners: 5,
     popup_font: "12px/1.5 Verdana, Arial, Helvetica, sans-serif",
     popup_nocss: "no",
-    
-		//Advanced settings
-		div: "map",
+
+    //Advanced settings
+    div: "map",
     auto_load: "yes",
     rotate: "0",
     url_new_tab: "yes",
     images_directory: "default",
     import_labels: "no",
     fade_time: 0.1,
-    link_text: "View Website"
+    link_text: "View Website",
   },
   state_specific: {
     HI: {
@@ -80,7 +79,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
+      hide: "yes",
     },
     AK: {
       name: "Alaska",
@@ -88,7 +87,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
+      hide: "yes",
     },
     FL: {
       name: "Florida",
@@ -96,175 +95,175 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      inactive: "no"
+      inactive: "no",
     },
     NH: {
       name: "New Hampshire",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     VT: {
       name: "Vermont",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     ME: {
       name: "Maine",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     RI: {
       name: "Rhode Island",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     NY: {
       name: "New York",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     PA: {
       name: "Pennsylvania",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     NJ: {
       name: "New Jersey",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     DE: {
       name: "Delaware",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     MD: {
       name: "Maryland",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     VA: {
       name: "Virginia",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     WV: {
       name: "West Virginia",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     OH: {
       name: "Ohio",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     IN: {
       name: "Indiana",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     IL: {
       name: "Illinois",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     CT: {
       name: "Connecticut",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     WI: {
       name: "Wisconsin",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     NC: {
       name: "North Carolina",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     DC: {
       name: "District of Columbia",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     MA: {
       name: "Massachusetts",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     TN: {
       name: "Tennessee",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     AR: {
       name: "Arkansas",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     MO: {
       name: "Missouri",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     GA: {
       name: "Georgia",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     SC: {
       name: "South Carolina",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     KY: {
       name: "Kentucky",
@@ -272,168 +271,168 @@ var simplemaps_usmap_mapdata={
       color: "default",
       zoomable: "no",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     AL: {
       name: "Alabama",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     LA: {
       name: "Louisiana",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     MS: {
       name: "Mississippi",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     IA: {
       name: "Iowa",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     MN: {
       name: "Minnesota",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     OK: {
       name: "Oklahoma",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     TX: {
       name: "Texas",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     NM: {
       name: "New Mexico",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     KS: {
       name: "Kansas",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     NE: {
       name: "Nebraska",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     SD: {
       name: "South Dakota",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     ND: {
       name: "North Dakota",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     WY: {
       name: "Wyoming",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     MT: {
       name: "Montana",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     CO: {
       name: "Colorado",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     UT: {
       name: "Utah",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     AZ: {
       name: "Arizona",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     NV: {
       name: "Nevada",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     OR: {
       name: "Oregon",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     WA: {
       name: "Washington",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     CA: {
       name: "California",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     MI: {
       name: "Michigan",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     ID: {
       name: "Idaho",
       description: "default",
       color: "default",
       hover_color: "default",
-      url: "default"
+      url: "default",
     },
     GU: {
       name: "Guam",
@@ -441,7 +440,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
+      hide: "yes",
     },
     VI: {
       name: "Virgin Islands",
@@ -449,7 +448,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
+      hide: "yes",
     },
     PR: {
       name: "Puerto Rico",
@@ -457,7 +456,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
+      hide: "yes",
     },
     AS: {
       name: "American Samoa",
@@ -465,7 +464,7 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
+      hide: "yes",
     },
     MP: {
       name: "Northern Mariana Islands",
@@ -473,343 +472,370 @@ var simplemaps_usmap_mapdata={
       color: "default",
       hover_color: "default",
       url: "default",
-      hide: "yes"
-    }
+      hide: "yes",
+    },
   },
   locations: {
-    "0": {
-      name: "Phoenix Suns",
+    0: {
+      name: "Footprint Center </br> <div class='darkorange'> Phoenix Suns </div>",
       lat: 33.4457,
       lng: -112.0712,
-      description: "Footprint Center",
+      description:
+        "<img src='https://ipg360.com/wp-content/uploads/2021/07/FootprintCenter_fully_lit-scaled.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "1": {
-      name: "Sacramento Kings",
+    1: {
+      name: "Golden 1 Center </br> <div class='darkorange'> Sacramento Kings </div>",
       lat: 38.5802,
       lng: -121.4997,
-      description: "Golden 1 Center",
+      description:
+        "<img src='https://www.sacrt.com/images/g1big.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "2": {
-      name: "Golden State Warriors",
-      lat: 37.7680,
+    2: {
+      name: "Chase Center </br> <div class='darkorange'> Golden State Warriors </div>",
+      lat: 37.768,
       lng: -122.3877,
-      description: "Chase Center",
+      description:
+        "<img src='https://www.mortenson.com/-/media/project/mortenson/site/images/projects/chase-center/banner-image.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "3": {
-      name: "Los Angeles Lakers",
-      lat: 34.0430,
+    3: {
+      name: "Staples Center </br> <div class='darkorange'> Los Angeles Lakers </div>",
+      lat: 34.043,
       lng: -118.2673,
-      description: "Staples Center",
+      description:
+        "<img src='https://www.staplescenter.com/assets/img/20160517_SC_Exterior_Figueroa_Street_Group-Sales-Slide-c111e40839.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "4": {
-      name: "Los Angeles Clippers",
-      lat: 34.3430,
+    4: {
+      name: "Staples Center </br> <div class='darkorange'> Los Angeles Clippers </div>",
+      lat: 34.343,
       lng: -118.2673,
-      description: "Staples Center",
+      description:
+        "<img src='https://e0.365dm.com/21/05/1600x900/skysports-staples-center-los-angeles-lakers_5397360.jpg?20210528053405' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "5": {
-      name: "Denver Nuggets",
+    5: {
+      name: "Ball Arena </br> <div class='darkorange'> Denver Nuggets </div>",
       lat: 39.7487,
       lng: -105.0076,
-      description: "Ball Arena",
+      description:
+        "<img src='https://www.nba.com/nuggets/sites/nuggets/files/ballarena2021.jpg?w=756&h=547' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "6": {
-      name: "Orlando Magic",
+    6: {
+      name: "Amway Center </br> <div class='darkorange'> Orlando Magic </div>",
       lat: 28.5392,
       lng: -81.3839,
-      description: "Amway Center",
+      description:
+        "<img src='https://www.amwaycenter.com/assets/img/BTExterior-Amway-Center-1.1-c51e9f0c4e.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "7": {
-      name: "Miami Heat",
+    7: {
+      name: "FTX Arena </br> <div class='darkorange'> Miami Heat </div>",
       lat: 25.7814,
-      lng: -80.1870,
-      description: "FTX Arena",
+      lng: -80.187,
+      description:
+        "<img src='https://boardroom.tv/wp-content/uploads/2021/03/miami-1024x720.png' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "8": {
-      name: "Atlanta Hawks",
+    8: {
+      name: "State Farm Arena </br> <div class='darkorange'> Atlanta Hawks </div>",
       lat: 33.7573,
       lng: -84.3963,
-      description: "State Farm Arena",
+      description:
+        "<img src='https://content.presspage.com/uploads/1441/1920_statefarmarenabrow.jpg?10000' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "9": {
-      name: "Chicago Bulls",
+    9: {
+      name: "United Center </br> <div class='darkorange'> Chicago Bulls </div>",
       lat: 41.8807,
       lng: -87.6742,
-      description: "United Center",
+      description:
+        "<img src='https://www.unitedcenter.com/assets/1/7/unitedcenter3.png' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "10": {
-      name: "Indiana Pacers",
-      lat: 39.7640,
+    10: {
+      name: "Gainbridge Fieldhouse </br> <div class='darkorange'> Indiana Pacers </div>",
+      lat: 39.764,
       lng: -86.1555,
-      description: "Bankers Life Fieldhouse",
+      description:
+        "<img src='https://cloudinary-assets.dostuffmedia.com/res/dostuff-media/image/upload/venue-45792/1477518155.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "11": {
-      name: "New Orlean Pelicans",
-      lat: 29.9490,
+    11: {
+      name: "Smoothie King Center </br> <div class='darkorange'> New Orlean Pelicans </div>",
+      lat: 29.949,
       lng: -90.0821,
-      description: "Smoothie King Center",
+      description:
+        "<img src='https://assets.simpleviewinc.com/simpleview/image/fetch/c_fill,g_auto,h_500,q_50,w_1400/https://assets.simpleviewinc.com/simpleview/image/upload/crm/neworleans/1_72F6311E-227D-44FE-BBA9CAB1B7B04BD5_21eda2bb-4960-4109-8ac6a6596ec9f8ac.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "12": {
-      name: "Boston Celtics",
+    12: {
+      name: "TD Garden </br> <div class='darkorange'> Boston Celtics </div>",
       lat: 42.3662,
       lng: -71.0621,
-      description: "TD Garden",
+      description:
+        "<img src='https://www.tdgarden.com/assets/img/default_slideshow-1600x600-7d0781f96b.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "13": {
-      name: "Detroit Pistons",
+    13: {
+      name: "Little Caesars Arena </br> <div class='darkorange'> Detroit Pistons </div>",
       lat: 42.3411,
       lng: -83.0553,
-      description: "Little Caesars Arena",
+      description:
+        "<img src='https://cdn.vox-cdn.com/thumbor/E59yxmAoOyzxsagffhdFLVO0x20=/0x0:720x480/920x613/filters:focal(313x66:427x180):format(webp)/cdn.vox-cdn.com/uploads/chorus_image/image/56034567/LittleCaesarsArena_Exterior_Thumb.0.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "14": {
-      name: "Minessota Timberwolves",
+    14: {
+      name: "Target Center </br> <div class='darkorange'> Minessota Timberwolves </div>",
       lat: 44.9795,
       lng: -93.2761,
-      description: "Target Center",
+      description:
+        "<img src='https://media-exp1.licdn.com/dms/image/C561BAQH9ialT6mekwg/company-background_10000/0/1559071021006?e=2159024400&v=beta&t=P3geUJj1JTURC1fUQLTwZm2PKHr55gPpIHezKbyQxUk' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "15": {
-      name: "New York Knicks",
+    15: {
+      name: "Madison Square Garden </br> <div class='darkorange'> New York Knicks </div>",
       lat: 40.7505,
       lng: -73.9934,
-      description: "Madison Square Garden",
+      description:
+        "<img src='https://www.adventurestudenttravel.com/wp-content/uploads/2014/01/nyc-4986116_1280.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "16": {
-      name: "Brooklyn Nets",
+    16: {
+      name: "Barclays Center </br> <div class='darkorange'> Brooklyn Nets </div>",
       lat: 40.6826,
       lng: -73.9754,
-      description: "Barclays Center",
+      description:
+        "<img src='https://www.barclayscenter.com/assets/img/about-1170x450-d9c047de75.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "17": {
-      name: "Charlotte Hornets",
+    17: {
+      name: "Spectrum Center </br> <div class='darkorange'> Charlotte Hornets </div>",
       lat: 35.2252,
       lng: -80.8394,
-      description: "Spectrum Center",
+      description:
+        "<img src='https://www.spectrumcentercharlotte.com/assets/img/Spectrum_Exterior_Thumb-9e853aa3f9.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "18": {
-      name: "Cleveland Cavaliers",
+    18: {
+      name: "Rocket Mortgage FieldHouse </br> <div class='darkorange'> Cleveland Cavaliers </div>",
       lat: 41.4965,
       lng: -81.6881,
-      description: "Rocket Mortgage FieldHouse",
+      description:
+        "<img src='https://www.architecturalrecord.com/ext/resources/Issues/2020/08-August/Rocket-Mortgage-FieldHouse-01-B.jpg?1596653435' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "19": {
-      name: "Oklahoma City Thunder",
+    19: {
+      name: "Paycom Center </br> <div class='darkorange'> Oklahoma City Thunder </div>",
       lat: 35.4634,
       lng: -97.5151,
-      description: "Paycom Center",
+      description:
+        "<img src='https://image.cnbcfm.com/api/v1/image/106917098-1627334645367-paycomcenter_roof_night-1.jpg?v=1627334826' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "20": {
-      name: "Portland Trail Blazers",
+    20: {
+      name: "Moda Center </br> <div class='darkorange'> Portland Trail Blazers </div>",
       lat: 45.5316,
       lng: -122.6668,
-      description: "Moda Center",
+      description:
+        "<img src='https://i.pinimg.com/originals/e4/c2/53/e4c253d6d5541e189d338d1a0fc6a9f2.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "21": {
-      name: "Philadelphia 76ers",
+    21: {
+      name: "Wells Fargo Center </br> <div class='darkorange'> Philadelphia 76ers </div>",
       lat: 39.9012,
-      lng: -75.1720,
-      description: "Wells Fargo Center",
+      lng: -75.172,
+      description:
+        "<img src='https://cdn10.phillymag.com/wp-content/uploads/sites/3/2018/10/940x540-04.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "22": {
-      name: "Memphis Grizzlies",
+    22: {
+      name: "FedExForum </br> <div class='darkorange'> Memphis Grizzlies </div>",
       lat: 35.1381,
       lng: -90.0506,
-      description: "FedExForum",
+      description:
+        "<img src='https://media.bizj.us/view/img/10377704/fedexforum*1200xx6600-3713-0-694.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "23": {
-      name: "Dallas Mavericks",
+    23: {
+      name: "American Airlines Center </br> <div class='darkorange'> Dallas Mavericks </div>",
       lat: 32.7905,
       lng: -96.8109,
-      description: "American Airlines Center",
+      description:
+        "<img src='https://www.americanairlinescenter.com/assets/img/aacenter.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "24": {
-      name: "Houston Rockets",
+    24: {
+      name: "Toyota Center </br> <div class='darkorange'> Houston Rockets </div>",
       lat: 29.7508,
       lng: -95.3621,
-      description: "Toyota Center",
+      description:
+        "<img src='https://dtnbgpzadn69x.cloudfront.net/images/2020/10/14/Toyota_Center.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "25": {
-      name: "San Antonio Spurs",
-      lat: 29.4270,
+    25: {
+      name: "AT&T Center </br> <div class='darkorange'> San Antonio Spurs </div>",
+      lat: 29.427,
       lng: -98.4375,
-      description: "AT&T Center",
+      description:
+        "<img src='https://304ljw4amcep3ali496xph6b-wpengine.netdna-ssl.com/wp-content/uploads/2019/05/ATT-center-SF-20160330_DIG_2708_MAS-1900-1600x1069.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "26": {
-      name: "Utah Jazz",
+    26: {
+      name: "Vivint Arena </br> <div class='darkorange'> Utah Jazz </div>",
       lat: 40.7683,
       lng: -111.9011,
-      description: "Vivint Arena",
+      description:
+        "<img src='https://www.lhm.com/wp-content/uploads/2017/09/700480000-800x600.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "27": {
-      name: "Milwaukee Bucks",
+    27: {
+      name: "Fiserv Forum </br> <div class='darkorange'> Milwaukee Bucks </div>",
       lat: 43.0451,
       lng: -87.9174,
-      description: "Fiserv Forum",
+      description:
+        "<img src='https://www.milwaukeemag.com/wp-content/uploads/2020/08/VM-FiservForum-NML-Meeting-Convention-563.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "28": {
-      name: "Washington Wizards",
+    28: {
+      name: "Capital One Arena </br> <div class='darkorange'> Washington Wizards </div>",
       lat: 38.8982,
       lng: -77.0209,
-      description: "Capital One Arena",
+      description:
+        "<img src='https://usbettingreport.com/wp-content/uploads/2019/10/capital-one-arena2-960x720.jpg' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    "29": {
-      name: "Toronto Raptors",
+    29: {
+      name: "Scotiabank Arena </br> <div class='darkorange'> Toronto Raptors </div>",
       lat: 43.6435,
       lng: -79.3791,
-      description: "Scotiabank Arena",
+      description:
+        "<img src='https://www.scotiabankarena.com/assets/img/SBA-VENUE-SEPT-2020-MED-RES-4726-55538bd0e3.JPG' style='width: 300px'/>",
       color: "default",
       url: "default",
       type: "default",
       size: "default",
-      display: .40
+      display: 0.4,
     },
-    
-    
-    
   },
   labels: {
     NH: {
@@ -818,7 +844,7 @@ var simplemaps_usmap_mapdata={
       y: "183",
       pill: "yes",
       width: 45,
-      display: "all"
+      display: "all",
     },
     VT: {
       parent_id: "VT",
@@ -826,7 +852,7 @@ var simplemaps_usmap_mapdata={
       y: "243",
       pill: "yes",
       width: 45,
-      display: "all"
+      display: "all",
     },
     RI: {
       parent_id: "RI",
@@ -834,7 +860,7 @@ var simplemaps_usmap_mapdata={
       y: "273",
       pill: "yes",
       width: 45,
-      display: "all"
+      display: "all",
     },
     NJ: {
       parent_id: "NJ",
@@ -842,7 +868,7 @@ var simplemaps_usmap_mapdata={
       y: "273",
       pill: "yes",
       width: 45,
-      display: "all"
+      display: "all",
     },
     DE: {
       parent_id: "DE",
@@ -850,7 +876,7 @@ var simplemaps_usmap_mapdata={
       y: "303",
       pill: "yes",
       width: 45,
-      display: "all"
+      display: "all",
     },
     MD: {
       parent_id: "MD",
@@ -858,7 +884,7 @@ var simplemaps_usmap_mapdata={
       y: "303",
       pill: "yes",
       width: 45,
-      display: "all"
+      display: "all",
     },
     DC: {
       parent_id: "DC",
@@ -866,7 +892,7 @@ var simplemaps_usmap_mapdata={
       y: "332",
       pill: "yes",
       width: 45,
-      display: "all"
+      display: "all",
     },
     MA: {
       parent_id: "MA",
@@ -874,7 +900,7 @@ var simplemaps_usmap_mapdata={
       y: "213",
       pill: "yes",
       width: 45,
-      display: "all"
+      display: "all",
     },
     CT: {
       parent_id: "CT",
@@ -882,243 +908,243 @@ var simplemaps_usmap_mapdata={
       y: "243",
       pill: "yes",
       width: 45,
-      display: "all"
+      display: "all",
     },
     HI: {
       parent_id: "HI",
       x: 305,
       y: 565,
-      pill: "yes"
+      pill: "yes",
     },
     AK: {
       parent_id: "AK",
       x: "113",
-      y: "495"
+      y: "495",
     },
     FL: {
       parent_id: "FL",
       x: "773",
-      y: "510"
+      y: "510",
     },
     ME: {
       parent_id: "ME",
       x: "893",
-      y: "85"
+      y: "85",
     },
     NY: {
       parent_id: "NY",
       x: "815",
-      y: "158"
+      y: "158",
     },
     PA: {
       parent_id: "PA",
       x: "786",
-      y: "210"
+      y: "210",
     },
     VA: {
       parent_id: "VA",
       x: "790",
-      y: "282"
+      y: "282",
     },
     WV: {
       parent_id: "WV",
       x: "744",
-      y: "270"
+      y: "270",
     },
     OH: {
       parent_id: "OH",
       x: "700",
-      y: "240"
+      y: "240",
     },
     IN: {
       parent_id: "IN",
       x: "650",
-      y: "250"
+      y: "250",
     },
     IL: {
       parent_id: "IL",
       x: "600",
-      y: "250"
+      y: "250",
     },
     WI: {
       parent_id: "WI",
       x: "575",
-      y: "155"
+      y: "155",
     },
     NC: {
       parent_id: "NC",
       x: "784",
-      y: "326"
+      y: "326",
     },
     TN: {
       parent_id: "TN",
       x: "655",
-      y: "340"
+      y: "340",
     },
     AR: {
       parent_id: "AR",
       x: "548",
-      y: "368"
+      y: "368",
     },
     MO: {
       parent_id: "MO",
       x: "548",
-      y: "293"
+      y: "293",
     },
     GA: {
       parent_id: "GA",
       x: "718",
-      y: "405"
+      y: "405",
     },
     SC: {
       parent_id: "SC",
       x: "760",
-      y: "371"
+      y: "371",
     },
     KY: {
       parent_id: "KY",
       x: "680",
-      y: "300"
+      y: "300",
     },
     AL: {
       parent_id: "AL",
       x: "655",
-      y: "405"
+      y: "405",
     },
     LA: {
       parent_id: "LA",
       x: "550",
-      y: "435"
+      y: "435",
     },
     MS: {
       parent_id: "MS",
       x: "600",
-      y: "405"
+      y: "405",
     },
     IA: {
       parent_id: "IA",
       x: "525",
-      y: "210"
+      y: "210",
     },
     MN: {
       parent_id: "MN",
       x: "506",
-      y: "124"
+      y: "124",
     },
     OK: {
       parent_id: "OK",
       x: "460",
-      y: "360"
+      y: "360",
     },
     TX: {
       parent_id: "TX",
       x: "425",
-      y: "435"
+      y: "435",
     },
     NM: {
       parent_id: "NM",
       x: "305",
-      y: "365"
+      y: "365",
     },
     KS: {
       parent_id: "KS",
       x: "445",
-      y: "290"
+      y: "290",
     },
     NE: {
       parent_id: "NE",
       x: "420",
-      y: "225"
+      y: "225",
     },
     SD: {
       parent_id: "SD",
       x: "413",
-      y: "160"
+      y: "160",
     },
     ND: {
       parent_id: "ND",
       x: "416",
-      y: "96"
+      y: "96",
     },
     WY: {
       parent_id: "WY",
       x: "300",
-      y: "180"
+      y: "180",
     },
     MT: {
       parent_id: "MT",
       x: "280",
-      y: "95"
+      y: "95",
     },
     CO: {
       parent_id: "CO",
       x: "320",
-      y: "275"
+      y: "275",
     },
     UT: {
       parent_id: "UT",
       x: "223",
-      y: "260"
+      y: "260",
     },
     AZ: {
       parent_id: "AZ",
       x: "205",
-      y: "360"
+      y: "360",
     },
     NV: {
       parent_id: "NV",
       x: "140",
-      y: "235"
+      y: "235",
     },
     OR: {
       parent_id: "OR",
       x: "100",
-      y: "120"
+      y: "120",
     },
     WA: {
       parent_id: "WA",
       x: "130",
-      y: "55"
+      y: "55",
     },
     ID: {
       parent_id: "ID",
       x: "200",
-      y: "150"
+      y: "150",
     },
     CA: {
       parent_id: "CA",
       x: "79",
-      y: "285"
+      y: "285",
     },
     MI: {
       parent_id: "MI",
       x: "663",
-      y: "185"
+      y: "185",
     },
     PR: {
       parent_id: "PR",
       x: "620",
-      y: "545"
+      y: "545",
     },
     GU: {
       parent_id: "GU",
       x: "550",
-      y: "540"
+      y: "540",
     },
     VI: {
       parent_id: "VI",
       x: "680",
-      y: "519"
+      y: "519",
     },
     MP: {
       parent_id: "MP",
       x: "570",
-      y: "575"
+      y: "575",
     },
     AS: {
       parent_id: "AS",
       x: "665",
-      y: "580"
-    }
-  }
+      y: "580",
+    },
+  },
 };
