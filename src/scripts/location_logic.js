@@ -13,7 +13,7 @@ async function displayHelper(name) {
   const body = document.getElementsByTagName('body')[0];
 
   body.style.background =
-    `linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(${playersIDs[name].img}) no-repeat center center fixed`;
+    `linear-gradient(to bottom, rgba(0,0,0,0.6) 0%,rgba(0,0,0,0.6) 100%), url(${playersIDs[name].img}) no-repeat center top fixed`;
   charts.style.display = "flex";
   btnsContainer.style.display = "grid";
   map.style.display = "none";
