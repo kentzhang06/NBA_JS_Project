@@ -4,7 +4,7 @@ function createBarChart(pts, asts, rebs, stls, blks, to) {
   document.getElementById("canvas-container").appendChild(canvas);
 
   const data = {
-    labels: ["Points", "Assists", "Rebounds", "Steals", "Blocks", "Turnover"],
+    labels: ["Points", "Assists", "Rebounds", "Steals", "Blocks", "Turnovers"],
     datasets: [
       {
         label: null,
