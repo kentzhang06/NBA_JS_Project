@@ -64,7 +64,6 @@ async function displayYearsClickable(rookieYear, name) {
     });
     btnsContainer.appendChild(childButton);
   }
-  console.log(currentYear);
 }
 
 export { displayYearsClickable };

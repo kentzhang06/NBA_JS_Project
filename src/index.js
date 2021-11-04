@@ -17,8 +17,6 @@ document.addEventListener('DOMContentLoaded', function(){
 
   document.body.addEventListener("click", function(e) {
     locationClicked(e);
-    // console.log(myChart);
-    // myChart.destroy();
     backBtnClicked(e);
 
   });
