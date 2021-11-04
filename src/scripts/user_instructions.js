@@ -9,7 +9,7 @@ function displayUserInstructions() {
     "</br>" +
     "<div> 2. Explore various NBA teams location markers in the state by clicking on a location marker </div>" +
     "</br>" +
-    "<div> 3. Watch the most popular player of that team's stats grow from rookie seasion until present day! </div>";
+    "<div> 3. Click on any of the seasons played to display stats for that year! </div>";
 }
 
 export { displayUserInstructions };

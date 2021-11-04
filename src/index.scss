@@ -12,9 +12,9 @@ body {
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: contain;
+  background-size: cover;
   font-family: 'Bebas Neue', cursive;
-  font-size: 20px;
+  font-size: 1.2em;
 
   a {
     text-decoration: none;
@@ -26,7 +26,7 @@ body {
 }
 
 .col-1 {
-  font-size: 12px;
+  font-size: 0.75em;
   width: 15%;
 }
 
@@ -62,11 +62,11 @@ body {
   flex-direction: column;
   align-items: center;
   .logo {
-    width: 200px;
+    width: 10vw;
   }
   h2 {
     color: white;
-    font-size: 40px;
+    font-size: 2.5em;
   }
 }
 
@@ -81,13 +81,13 @@ body {
   height: 50%;
   background-color: rgb(27, 27, 27);
   color: orange;
-  line-height: 1.6;
-  padding: 8px;
+  line-height: 1.6em;
+  padding: 1%;
   border-radius: 6px;
 
   h2 {
     color: white;
-    font-size: 26px;
+    font-size: 1.5em;
   }
 
   #tip {
@@ -109,7 +109,7 @@ body {
   
   h3 {
     color: white;
-    margin-right: 15px;
+    margin-right: 2%;
   }
 
   ion-icon {
@@ -138,7 +138,7 @@ body {
 .logo {
   text-decoration: none;
   color: #8b7e7e;
-  font-size: 30px;
+  font-size: 1.7em;
 }
 
 
@@ -147,7 +147,7 @@ body {
 }
 
 #simplemaps_list li {
-  padding: 5px;
+  padding: 1%;
 }
 
 #simplemaps_list li a {
@@ -155,7 +155,7 @@ body {
   list-style-type: none;
   text-align: left;
   color: #eb9b08;
-  font-size: 25px;
+  font-size: 2em;
 
 }
 
@@ -165,7 +165,7 @@ body {
 }
 
 #canvas-container {
-  width: 600px;
+  width: 31vw;
   position: fixed;
   top: 28%;
   left: 18%;
@@ -176,8 +176,8 @@ body {
 #mycanvas {
   display: none;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 600px;
-  height: 600px;
+  width: 31vw;
+  height: 58vh;
   z-index: 5;
 }
 
@@ -185,9 +185,9 @@ body {
 #mycanvas2 {
   display: none;
   background-color: rgba(0, 0, 0, 0.6);
-  width: 400px;
-  height: 400px;
-  margin-left: 30px;
+  width: 20vw;
+  height: 39vh;
+  margin-left: 2%;
   z-index: 5;
 }
 
@@ -202,11 +202,11 @@ body {
 .back {
   background-color: rgb(27, 27, 27);
   color: #eb9b08;
-  font-size: 25px;
+  font-size: 1.5em;
   border: none;
   border-radius: 4px;
-  width: 100px;
-  padding: 10px;
+  width: 5vw;
+  padding: 1.5%;
   transition: 0.8s;
 }
 
@@ -227,26 +227,26 @@ body {
 
 #years-btns {
   display: grid;
-  width: 240px;
-  grid-template-columns: 110px 110px;
-  grid-gap: 10px;
+  width: 38vw;
+  grid-template-columns: 5.7vw 5.7vw;
+  grid-gap: 2%;
   margin-left: 2%;
 }
 
 .year-btn {
-  width: 100px;
-  height: 50px;
+  width: 5vw;
+  height: 5vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
   border-radius: 10px;
   color: orange;
-  font-size: 30px;
+  font-size: 1.5em;
   background-color: rgb(27, 27, 27);;
   border: 2px solid black;
-  margin-bottom: 5px;
+  margin-bottom: 1%;
   transition: 0.6s;
-  padding: 3px;
+  padding: 0.5%;
 }
 
 .year-btn:hover {
