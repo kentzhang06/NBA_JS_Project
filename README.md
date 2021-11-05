@@ -12,12 +12,16 @@ Once a player is selected from the home screen, a dynamically growing bar graph 
 
 
 The image below is the splash page utilizing SimpleMaps.com interactive map to display locations of NBA teams around the USA. On the left is an interactive list that allows you to hover over a state's name to locate that state.
+
 ![image](https://user-images.githubusercontent.com/44277861/140581036-21ff7ce5-5eae-4e69-bcbb-5a3e34de7c62.png)
 
 When selecting a specific location marker when zoomed in on a state, automatically displayed will be averages for the most recent completed season for the most popular player of that team. Below shows Stephen Curry of the Golden State Warriors' 2020 average stats. The buttons on the left allow for the user to select which season averages they would like to display.
+
 ![screen-shot](https://user-images.githubusercontent.com/44277861/140581838-6248a5d2-d782-4264-84e5-f8d0ba590cd8.jpg)
 
-```
+The code snippet below shows the use of vanilla DOM manipulation in this project. Each season button is rendered based from a player's rookie year to the currentYear accessed by Javascript's built-in date object and methods. Vanilla DOM allows to dynamically create HTML objects with javascript and adding onclick functionality when they are displayed on the DOM. When a season button is clicked, both previous charts displaying stats are destroyed, an API call is made to BallDontLie API to fetch the neccessary data for that season and player, and re-rendering happens through Chart.js's libraries for creating charts.
+
+``` JS
   for (let i = rookieYear; i < currentYear; i++) {
     let childButton = document.createElement("div");
     childButton.className = "year-btn";
