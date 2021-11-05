@@ -2,21 +2,53 @@
 Link to live project:
 https://kentzhang06.github.io/NBA_JS_Project/
 
+![nba-project](https://user-images.githubusercontent.com/44277861/140581542-c20252e3-c62c-46f6-ab73-e058539faaae.gif)
+
 # Background:
 
-NBA players data visualizer
-This data visualizer will dynamically display the 30 players, one from each NBA team, stats from the time they joined the league until the present day.
+NBA players data visualizer will dynamically display 30 players, one from each NBA team, average stats from the time they joined the league until the present day.
 Each team will have one player as a representative of their team aka the face of the team. The home page will be a map of the USA with selectable pins locating each NBA team.
 Once a player is selected from the home screen, a dynamically growing bar graph will display the stats of the player from their rookie season to current day.
+
+
+The image below is the splash page utilizing SimpleMaps.com interactive map to display locations of NBA teams around the USA. On the left is an interactive list that allows you to hover over a state's name to locate that state.
+![image](https://user-images.githubusercontent.com/44277861/140581036-21ff7ce5-5eae-4e69-bcbb-5a3e34de7c62.png)
+
+When selecting a specific location marker when zoomed in on a state, automatically displayed will be averages for the most recent completed season for the most popular player of that team. Below shows Stephen Curry of the Golden State Warriors' 2020 average stats. The buttons on the left allow for the user to select which season averages they would like to display.
+![screen-shot](https://user-images.githubusercontent.com/44277861/140581838-6248a5d2-d782-4264-84e5-f8d0ba590cd8.jpg)
+
+```
+  for (let i = rookieYear; i < currentYear; i++) {
+    let childButton = document.createElement("div");
+    childButton.className = "year-btn";
+    childButton.innerHTML = `<div>${i}</div> <ion-icon name="basketball"></ion-icon>`;
+    childButton.addEventListener("click", async function () {
+      res = await fetchPlayer(name, i);
+      stats = res.data[0];
+      pieChart.destroy();
+      barChart.destroy();
+      pieChart = createPieChart(stats.fg_pct, stats.fg3_pct, stats.ft_pct);
+      barChart = createBarChart(
+        stats.pts,
+        stats.ast,
+        stats.reb,
+        stats.stl,
+        stats.blk,
+        stats.turnover,
+        stats.games_played
+      );
+    });
+    btnsContainer.appendChild(childButton);
+  }
+ ```
 
 # Functionality:
 In NBA Players Stats, users will be able to:
 
 - Clickable selections of a map of the USA with selectable pins for each NBA team
 - Zoom in and out closer to the map by scrolling
-- Visualize a selected player's stats dynamically grow over the years
-- Manually select a year to display total stats or average stats of a player that year
-- Select background music
+- Visualize a selected player's average stats from each season (rookie-present)
+- Manually select a year to display average stats of a player that year
 
 In addition, this project will include:
 - Directions on how to use the visualizer
@@ -35,14 +67,8 @@ In addition, this project will include:
 # Technologies, Libraries, APIs:
 - https://balldontlie.io/ API
 - Vanilla DOM manipulation for click handling
-- D3.js for dynamic bar graph visualization
+- Chart.js for dynamic bar graph visualization
 
-# Implementation Timeline:
--  Friday Afternoon & Weekend: Setup project, get webpack running. Get used to D3 for data visualization. Learn how to implement a zoomable map of the USA. Create classes for a single player and a city on the map.
-- Monday: Ensure that each pin on the map is clickable and redirects to a different page (player's show page). Add searching feature to NAV bar and links to socials.
-- Tuesday: On the player's show page, implement dynamically growing bar graphs of the players stats. Implement ability to statically show player's stats from a selected year using the filter bar.
-- Wednesday: Focus on styling each step of the project, if have time add background sound on home page and player's show page.
-- Thursday Morning: Deploy to GitHub pages. Rewrite proposal.
 
 # Bonus features:
 - Add beats that goes with the growth of bar graphs in player's show page.
