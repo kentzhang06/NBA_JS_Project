@@ -41,6 +41,7 @@ async function displayYearsClickable(rookieYear, name) {
   );
 
   displayYearsHeader();
+  
   displayPlayerHeader(name);
   for (let i = rookieYear; i < currentYear; i++) {
     let childButton = document.createElement("div");
