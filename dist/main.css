@@ -135,19 +135,23 @@ body a {
 #simplemaps_list li {
   padding: 1%;
   margin-left: 2%;
+  list-style-type: none;
 }
 
 #simplemaps_list li a {
-  cursor: default;
+  pointer-events: none;
   list-style-type: none;
   text-align: left;
   color: #eb9b08;
   font-size: 2em;
 }
 
-#simplemaps_list li a:hover {
-  color: #000000;
+#simplemaps_list li:hover {
+  cursor: default;
   font-weight: bold;
+}
+#simplemaps_list li:hover a {
+  color: #000000;
 }
 
 #canvas-container {

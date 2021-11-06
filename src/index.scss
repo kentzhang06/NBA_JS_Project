@@ -151,10 +151,11 @@ body {
 #simplemaps_list li {
   padding: 1%;
   margin-left: 2%;
+  list-style-type: none;
 }
 
 #simplemaps_list li a {
-  cursor: default;
+  pointer-events: none;
   list-style-type: none;
   text-align: left;
   color: #eb9b08;
@@ -162,8 +163,11 @@ body {
 
 }
 
-#simplemaps_list li a:hover {
-  color:#000000;
+#simplemaps_list li:hover {
+  cursor: default;
+  a {
+    color:#000000;
+  }
   font-weight: bold;
 }
 
